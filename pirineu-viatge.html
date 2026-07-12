@@ -3,200 +3,235 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pirineu Aragonès · Juliol 2025</title>
+<title>Pirineu 2025 · Juliol</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --green:#1a6b4a; --green-light:#e6f4ed; --green-mid:#2d8c62;
-    --blue:#2563a8; --blue-light:#e8f0fb;
-    --amber:#9a5f0a; --amber-light:#fdf0d8;
-    --stone:#f5f2ec; --stone-dark:#e8e3da;
-    --ink:#1c1a17; --ink-mid:#4a4640; --ink-light:#7a756e;
-    --white:#ffffff;
-    --red-tag:#8b2020; --red-bg:#fbeaea;
-    --purple-tag:#4a2d8a; --purple-bg:#eee9fc;
-    --teal-tag:#0f5f5f; --teal-bg:#e4f4f4;
-  }
-  html { scroll-behavior: smooth; }
-  body { font-family:'Inter',sans-serif; background:var(--stone); color:var(--ink); min-height:100vh; font-size:15px; line-height:1.6; }
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --g:#1a6b4a;--gl:#e6f4ed;--gm:#2d8c62;
+  --b:#2563a8;--bl:#e8f0fb;
+  --am:#9a5f0a;--al:#fdf0d8;
+  --stone:#f5f2ec;--stoned:#e8e3da;
+  --ink:#1c1a17;--inkm:#4a4640;--inkl:#7a756e;
+  --wh:#fff;
+  --red:#8b2020;--redbg:#fbeaea;
+  --pur:#4a2d8a;--purbg:#eee9fc;
+  --teal:#0f5f5f;--tealbg:#e4f4f4;
+  --oran:#7a3a00;--oranbg:#fff0e0;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--stone);color:var(--ink);font-size:15px;line-height:1.6}
 
-  /* HERO */
-  .hero { background:var(--ink); color:var(--white); padding:3rem 1.5rem 2.5rem; text-align:center; position:relative; overflow:hidden; }
-  .hero::before { content:''; position:absolute; inset:0; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 300'%3E%3Cpath d='M0 300 L0 180 Q100 120 200 150 Q300 180 400 120 Q500 60 600 90 Q700 120 800 80 Q900 40 1000 70 Q1100 100 1200 60 L1200 300Z' fill='%232d8c62' opacity='0.18'/%3E%3Cpath d='M0 300 L0 220 Q150 160 300 190 Q450 220 600 150 Q750 80 900 110 Q1050 140 1200 100 L1200 300Z' fill='%231a6b4a' opacity='0.12'/%3E%3C/svg%3E") bottom/cover no-repeat; }
-  .hero-inner { position:relative; z-index:1; max-width:680px; margin:0 auto; }
-  .hero-eyebrow { font-size:11px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#6ec99a; margin-bottom:0.75rem; }
-  .hero h1 { font-family:'Lora',serif; font-size:clamp(1.8rem,5vw,2.8rem); font-weight:600; line-height:1.2; margin-bottom:0.5rem; }
-  .hero-sub { font-size:14px; color:rgba(255,255,255,0.6); margin-bottom:1.75rem; }
-  .hero-badges { display:flex; gap:0.5rem; justify-content:center; flex-wrap:wrap; }
-  .hero-badge { background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.18); border-radius:100px; padding:5px 14px; font-size:12px; color:rgba(255,255,255,0.8); }
+/* HERO */
+.hero{background:var(--ink);color:var(--wh);padding:2.5rem 1.5rem 2rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 280'%3E%3Cpath d='M0 280 L0 170 Q100 110 200 140 Q300 170 400 110 Q500 50 600 80 Q700 110 800 70 Q900 30 1000 60 Q1100 90 1200 50 L1200 280Z' fill='%232d8c62' opacity='0.18'/%3E%3C/svg%3E") bottom/cover no-repeat}
+.hero-inner{position:relative;z-index:1;max-width:700px;margin:0 auto}
+.hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#6ec99a;margin-bottom:.6rem}
+.hero h1{font-family:'Lora',serif;font-size:clamp(1.7rem,5vw,2.6rem);font-weight:600;line-height:1.2;margin-bottom:.4rem}
+.hero-sub{font-size:13px;color:rgba(255,255,255,.55);margin-bottom:1.5rem}
 
-  /* NAV */
-  .tab-nav { background:var(--white); border-bottom:1px solid var(--stone-dark); position:sticky; top:0; z-index:100; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
-  .tab-nav::-webkit-scrollbar { display:none; }
-  .tab-nav-inner { display:flex; align-items:stretch; min-width:max-content; padding:0 1rem; }
-  .tab-btn { background:none; border:none; cursor:pointer; padding:0.85rem 1rem; font-family:'Inter',sans-serif; font-size:13px; font-weight:500; color:var(--ink-light); border-bottom:2px solid transparent; transition:color .15s,border-color .15s; white-space:nowrap; display:flex; align-items:center; gap:6px; }
-  .tab-btn:hover { color:var(--ink); }
-  .tab-btn.active-green { color:var(--green); border-bottom-color:var(--green); }
-  .tab-btn.active-blue  { color:var(--blue);  border-bottom-color:var(--blue);  }
-  .tab-btn.active-amber { color:var(--amber); border-bottom-color:var(--amber); }
-  .tab-dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
-  .dot-g { background:var(--green); } .dot-b { background:var(--blue); } .dot-a { background:var(--amber); }
+/* MAIN TABS */
+.main-nav{background:var(--wh);border-bottom:1px solid var(--stoned);position:sticky;top:0;z-index:200;overflow-x:auto;scrollbar-width:none}
+.main-nav::-webkit-scrollbar{display:none}
+.main-nav-inner{display:flex;min-width:max-content;padding:0 .75rem}
+.tab-btn{background:none;border:none;cursor:pointer;padding:.8rem .95rem;font-family:'Inter',sans-serif;font-size:13px;font-weight:500;color:var(--inkl);border-bottom:2px solid transparent;transition:color .15s,border-color .15s;white-space:nowrap;display:flex;align-items:center;gap:6px}
+.tab-btn:hover{color:var(--ink)}
+.tab-btn.ag{color:var(--g);border-bottom-color:var(--g)}
+.tab-btn.ab{color:var(--b);border-bottom-color:var(--b)}
+.tab-btn.aa{color:var(--am);border-bottom-color:var(--am)}
+.tab-btn.amap{color:var(--pur);border-bottom-color:var(--pur)}
+.tdot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.dg{background:var(--g)}.db{background:var(--b)}.da{background:var(--am)}.dm{background:var(--pur)}
 
-  /* SECTIONS */
-  .section { display:none; padding:1.5rem 1rem 3rem; max-width:800px; margin:0 auto; }
-  .section.visible { display:block; }
-  .section-header { margin-bottom:1.5rem; padding-bottom:1rem; border-bottom:1px solid var(--stone-dark); }
-  .section-header h2 { font-family:'Lora',serif; font-size:1.4rem; font-weight:600; color:var(--ink); margin-bottom:4px; }
-  .section-meta { font-size:13px; color:var(--ink-light); }
-  .section-meta strong { color:var(--ink-mid); font-weight:500; }
+/* SECTIONS */
+.section{display:none;padding:1.25rem .9rem 3rem;max-width:820px;margin:0 auto}
+.section.visible{display:block}
+.sec-header{margin-bottom:1.25rem;padding-bottom:.9rem;border-bottom:1px solid var(--stoned)}
+.sec-header h2{font-family:'Lora',serif;font-size:1.35rem;font-weight:600;color:var(--ink);margin-bottom:3px}
+.sec-meta{font-size:13px;color:var(--inkl)}
+.sec-meta strong{color:var(--inkm);font-weight:500}
 
-  /* DAY CARDS */
-  .day-card { background:var(--white); border-radius:12px; border:1px solid var(--stone-dark); margin-bottom:1rem; overflow:hidden; transition:box-shadow .15s; }
-  .day-card:hover { box-shadow:0 2px 12px rgba(0,0,0,0.07); }
-  .day-header { display:flex; align-items:center; gap:12px; padding:1rem 1.25rem; cursor:pointer; user-select:none; }
-  .day-num { font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-light); min-width:54px; }
-  .day-title-wrap { flex:1; }
-  .day-title { font-weight:500; font-size:15px; color:var(--ink); }
-  .day-subtitle-preview { font-size:12px; color:var(--ink-light); margin-top:1px; }
-  .day-chevron { color:var(--ink-light); font-size:18px; transition:transform .2s; flex-shrink:0; }
-  .day-card.open .day-chevron { transform:rotate(180deg); }
-  .day-body { display:none; padding:0 1.25rem 1.25rem; border-top:1px solid var(--stone-dark); }
-  .day-card.open .day-body { display:block; }
+/* DAY CARDS */
+.day-card{background:var(--wh);border-radius:12px;border:1px solid var(--stoned);margin-bottom:.85rem;overflow:hidden;transition:box-shadow .15s}
+.day-card:hover{box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.day-hdr{display:flex;align-items:center;gap:10px;padding:.9rem 1.1rem;cursor:pointer;user-select:none}
+.day-num{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--inkl);min-width:52px}
+.day-tw{flex:1}
+.day-title{font-weight:500;font-size:15px;color:var(--ink)}
+.day-prev{font-size:12px;color:var(--inkl);margin-top:1px}
+.day-chev{color:var(--inkl);font-size:17px;transition:transform .2s;flex-shrink:0}
+.day-card.open .day-chev{transform:rotate(180deg)}
+.day-body{display:none;padding:0 1.1rem 1.1rem;border-top:1px solid var(--stoned)}
+.day-card.open .day-body{display:block}
 
-  /* DIFF BADGE */
-  .diff { display:inline-block; font-size:10px; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; padding:2px 9px; border-radius:100px; margin:0.9rem 0 0.2rem; }
-  .diff-facil   { background:var(--green-light); color:var(--green); }
-  .diff-moderat { background:#fef3cd; color:#7a5a00; }
-  .diff-exigent { background:#fde8e8; color:#8b2020; }
+/* DIFFICULTY */
+.diff{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 9px;border-radius:100px;margin:.8rem 0 .15rem}
+.df{background:var(--gl);color:var(--g)}
+.dm2{background:#fef3cd;color:#7a5a00}
+.de{background:var(--redbg);color:var(--red)}
 
-  /* TAGS */
-  .tags { display:flex; flex-wrap:wrap; gap:5px; margin:0.5rem 0 0.9rem; }
-  .tag { font-size:10.5px; font-weight:600; letter-spacing:0.04em; padding:3px 9px; border-radius:100px; text-transform:uppercase; }
-  .tag-s { background:var(--green-light); color:var(--green); }
-  .tag-p { background:var(--blue-light);  color:var(--blue); }
-  .tag-n { background:var(--amber-light); color:var(--amber); }
-  .tag-v { background:var(--purple-bg);   color:var(--purple-tag); }
-  .tag-f { background:var(--red-bg);      color:var(--red-tag); }
-  .tag-t { background:var(--teal-bg);     color:var(--teal-tag); }
+/* TAGS */
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin:.45rem 0 .8rem}
+.tag{font-size:10px;font-weight:700;letter-spacing:.04em;padding:2px 8px;border-radius:100px;text-transform:uppercase;cursor:default}
+.ts{background:var(--gl);color:var(--g)}
+.tp{background:var(--bl);color:var(--b)}
+.tn{background:var(--al);color:var(--am)}
+.tv{background:var(--purbg);color:var(--pur)}
+.tf{background:var(--redbg);color:var(--red)}
+.tav{background:var(--oranbg);color:var(--oran)}
+.tc{background:var(--tealbg);color:var(--teal)}
 
-  /* BODY TEXT */
-  .day-desc { font-size:14px; color:var(--ink-mid); line-height:1.75; margin-bottom:0.9rem; }
-  .day-desc strong { color:var(--ink); font-weight:600; }
-  .day-desc em { font-style:italic; color:var(--ink-light); }
-  .day-tip { font-size:12.5px; color:var(--ink-light); background:var(--stone); border-radius:8px; padding:9px 13px; margin-top:0.75rem; line-height:1.6; }
-  .day-tip b { color:var(--ink-mid); font-weight:500; }
+/* DESCRIPTION */
+.ddesc{font-size:13.5px;color:var(--inkm);line-height:1.75;margin-bottom:.75rem}
+.ddesc strong{color:var(--ink);font-weight:600}
+.dtip{font-size:12px;color:var(--inkl);background:var(--stone);border-radius:7px;padding:8px 11px;margin-top:.6rem;line-height:1.55}
+.dtip b{color:var(--inkm);font-weight:500}
 
-  /* COMPLEMENTS */
-  .complements-label { font-size:11px; font-weight:600; letter-spacing:0.09em; text-transform:uppercase; color:var(--ink-light); margin:1.25rem 0 0.6rem; }
-  .complements-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
-  @media(max-width:480px) { .complements-grid { grid-template-columns:1fr; } }
-  .complement-item { background:var(--stone); border:1px solid var(--stone-dark); border-radius:9px; padding:10px 12px; }
-  .complement-name { font-size:13px; font-weight:500; color:var(--ink); margin-bottom:3px; }
-  .complement-desc { font-size:12px; color:var(--ink-light); line-height:1.5; margin-bottom:6px; }
-  .maps-btn { display:inline-flex; align-items:center; gap:6px; padding:5px 11px; border-radius:7px; border:1.5px solid currentColor; font-family:'Inter',sans-serif; font-size:11.5px; font-weight:500; text-decoration:none; cursor:pointer; transition:background .15s; }
-  .maps-btn svg { width:13px; height:13px; flex-shrink:0; }
-  .maps-btn-g { color:var(--green-mid); background:var(--green-light); border-color:#a8d9c0; }
-  .maps-btn-g:hover { background:#cceedd; }
-  .maps-btn-b { color:var(--blue); background:var(--blue-light); border-color:#b0ccee; }
-  .maps-btn-b:hover { background:#d0e4f8; }
-  .maps-btn-a { color:var(--amber); background:var(--amber-light); border-color:#e8c88a; }
-  .maps-btn-a:hover { background:#fce3b0; }
-  /* main maps btn (larger) */
-  .maps-btn-main { padding:8px 14px; font-size:13px; margin-top:0.9rem; margin-right:6px; border-radius:8px; }
+/* ACTIVITIES GRID */
+.acts-label{font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--inkl);margin:1.1rem 0 .55rem}
+.acts-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+@media(max-width:500px){.acts-grid{grid-template-columns:1fr}}
+.act-card{background:var(--stone);border:1px solid var(--stoned);border-radius:9px;padding:9px 11px}
+.act-name{font-size:13px;font-weight:500;color:var(--ink);margin-bottom:2px}
+.act-meta{font-size:11px;color:var(--inkl);margin-bottom:5px}
+.act-desc{font-size:11.5px;color:var(--inkl);line-height:1.5;margin-bottom:6px}
 
-  /* EXTRA */
-  .extra-divider { display:flex; align-items:center; gap:10px; margin:1.75rem 0 1rem; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-light); }
-  .extra-divider::before,.extra-divider::after { content:''; flex:1; height:1px; background:var(--stone-dark); }
-  .extra-card { background:var(--stone); border:1.5px dashed var(--stone-dark); border-radius:12px; overflow:hidden; }
-  .extra-header { display:flex; align-items:center; gap:12px; padding:1rem 1.25rem; cursor:pointer; user-select:none; }
-  .extra-icon { font-size:18px; flex-shrink:0; }
-  .extra-title-wrap { flex:1; }
-  .extra-label { font-size:10px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-light); margin-bottom:2px; }
-  .extra-title { font-weight:500; font-size:14.5px; color:var(--ink); }
-  .extra-chevron { color:var(--ink-light); font-size:18px; transition:transform .2s; flex-shrink:0; }
-  .extra-card.open .extra-chevron { transform:rotate(180deg); }
-  .extra-body { display:none; padding:0 1.25rem 1.25rem; border-top:1px solid var(--stone-dark); }
-  .extra-card.open .extra-body { display:block; }
+/* MAP BUTTONS */
+.mbtn{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:7px;border:1.5px solid currentColor;font-family:'Inter',sans-serif;font-size:11px;font-weight:600;text-decoration:none;cursor:pointer;transition:opacity .15s;background:none}
+.mbtn:hover{opacity:.75}
+.mbtn svg{width:12px;height:12px;flex-shrink:0}
+.mbtn-g{color:var(--gm)}
+.mbtn-b{color:var(--b)}
+.mbtn-a{color:var(--am)}
+.mbtn-main{padding:7px 13px;font-size:12.5px;margin-top:.8rem;margin-right:5px;border-radius:8px}
 
-  footer { text-align:center; padding:2rem 1rem; font-size:12px; color:var(--ink-light); border-top:1px solid var(--stone-dark); background:var(--white); margin-top:2rem; }
-  @media(max-width:480px) { .hero{padding:2rem 1rem 2rem;} .section{padding:1rem .75rem 2.5rem;} .day-header,.day-body,.extra-header,.extra-body{padding-left:1rem;padding-right:1rem;} }
+/* EXTRA DAY */
+.extra-div{display:flex;align-items:center;gap:9px;margin:1.5rem 0 .85rem;font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--inkl)}
+.extra-div::before,.extra-div::after{content:'';flex:1;height:1px;background:var(--stoned)}
+.extra-card{background:var(--stone);border:1.5px dashed var(--stoned);border-radius:12px;overflow:hidden;margin-bottom:.85rem}
+.extra-hdr{display:flex;align-items:center;gap:10px;padding:.9rem 1.1rem;cursor:pointer;user-select:none}
+.extra-icon{font-size:16px;flex-shrink:0}
+.extra-tw{flex:1}
+.extra-lbl{font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--inkl);margin-bottom:1px}
+.extra-ttl{font-weight:500;font-size:14px;color:var(--ink)}
+.extra-chev{color:var(--inkl);font-size:17px;transition:transform .2s;flex-shrink:0}
+.extra-card.open .extra-chev{transform:rotate(180deg)}
+.extra-body{display:none;padding:0 1.1rem 1.1rem;border-top:1px solid var(--stoned)}
+.extra-card.open .extra-body{display:block}
+
+/* ═══════════ EXPLORADOR (filtres) ═══════════ */
+#explorer{padding:1.25rem .9rem 3rem;max-width:820px;margin:0 auto;display:none}
+#explorer.visible{display:block}
+.exp-title{font-family:'Lora',serif;font-size:1.25rem;font-weight:600;margin-bottom:.3rem}
+.exp-sub{font-size:13px;color:var(--inkl);margin-bottom:1.1rem}
+
+.filter-bar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.25rem}
+.fbtn{background:var(--wh);border:1.5px solid var(--stoned);border-radius:100px;padding:5px 13px;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;cursor:pointer;color:var(--inkl);transition:all .15s;text-transform:uppercase;letter-spacing:.04em}
+.fbtn:hover{border-color:var(--inkl);color:var(--ink)}
+.fbtn.active{color:var(--wh)}
+.fbtn.fs.active{background:var(--g);border-color:var(--g)}
+.fbtn.fc.active{background:var(--teal);border-color:var(--teal)}
+.fbtn.fi.active{background:var(--b);border-color:var(--b)}
+.fbtn.fp.active{background:#6b4f00;border-color:#6b4f00}
+.fbtn.fav.active{background:var(--oran);border-color:var(--oran)}
+.fbtn.fv.active{background:var(--pur);border-color:var(--pur)}
+.fbtn.fnat.active{background:var(--am);border-color:var(--am)}
+.fbtn.fall.active{background:var(--inkm);border-color:var(--inkm)}
+
+.results-info{font-size:12px;color:var(--inkl);margin-bottom:.9rem}
+
+.places-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.place-card{background:var(--wh);border:1px solid var(--stoned);border-radius:11px;padding:13px 14px;transition:box-shadow .15s;cursor:pointer}
+.place-card:hover{box-shadow:0 3px 12px rgba(0,0,0,.09)}
+.place-card[data-hidden]{display:none}
+.pc-zone{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px}
+.pc-zone.zg{color:var(--g)}.pc-zone.zb{color:var(--b)}.pc-zone.za{color:var(--am)}.pc-zone.zt{color:var(--inkl)}
+.pc-name{font-size:14px;font-weight:500;color:var(--ink);margin-bottom:4px}
+.pc-tags{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:7px}
+.pc-diff{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.pf{color:var(--g)}.pm{color:#7a5a00}.pe{color:var(--red)}
+.pc-desc{font-size:12px;color:var(--inkl);line-height:1.55;margin-bottom:8px}
+.pc-info{font-size:11px;color:var(--inkl);margin-bottom:8px}
+.pc-info span{margin-right:10px}
+
+footer{text-align:center;padding:1.75rem 1rem;font-size:12px;color:var(--inkl);border-top:1px solid var(--stoned);background:var(--wh);margin-top:2rem}
 </style>
 </head>
 <body>
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">Planificació de viatge</div>
+    <div class="hero-eyebrow">Planificació de viatge · Juliol 2025</div>
     <h1>Pirineu Aragonès<br><em style="font-weight:400;font-style:italic;">i Navarrès</em></h1>
-    <div class="hero-sub">20 – 30 de juliol · 10 dies · 3 allotjaments</div>
-    <div class="hero-badges">
-      <span class="hero-badge">🏔 Senderisme familiar</span>
-      <span class="hero-badge">🏘 Pobles medievals</span>
-      <span class="hero-badge">💧 Ibons i cascades</span>
-      <span class="hero-badge">🚗 En cotxe</span>
-    </div>
+    <div class="hero-sub">20 – 30 de juliol · 10 dies · 3 allotjaments · en cotxe</div>
   </div>
 </div>
 
-<nav class="tab-nav" role="tablist">
-  <div class="tab-nav-inner">
-    <button class="tab-btn active-green" role="tab" onclick="showSection('s1',this)"><span class="tab-dot dot-g"></span>Varetja · 20–24 jul</button>
-    <button class="tab-btn" role="tab" onclick="showSection('s2',this)"><span class="tab-dot dot-b"></span>Gourette · 24–27 jul</button>
-    <button class="tab-btn" role="tab" onclick="showSection('s3',this)"><span class="tab-dot dot-a"></span>Boltaña · 27–30 jul</button>
+<nav class="main-nav" role="tablist">
+  <div class="main-nav-inner">
+    <button class="tab-btn ag" onclick="showMain('s1',this)"><span class="tdot dg"></span>Varetja · 20–24</button>
+    <button class="tab-btn" onclick="showMain('s2',this)"><span class="tdot db"></span>Gourette · 24–27</button>
+    <button class="tab-btn" onclick="showMain('s3',this)"><span class="tdot da"></span>Boltaña · 27–30</button>
+    <button class="tab-btn" onclick="showMain('explorer',this)"><span class="tdot dm"></span>🗂 Explorador</button>
   </div>
 </nav>
 
-<!-- ══════════ ALLOTJAMENT 1: VARETJA ══════════ -->
+<!-- ═══════════════════════════════════════════
+     ALLOTJAMENT 1 · VARETJA
+════════════════════════════════════════════ -->
 <section id="s1" class="section visible">
-  <div class="section-header">
-    <h2>Varetja — als peus del Tourmalet</h2>
-    <div class="section-meta"><strong>20–24 de juliol · 4 nits</strong> · Hautes-Pyrénées, França</div>
+  <div class="sec-header">
+    <h2>Varetja — Hautes-Pyrénées</h2>
+    <div class="sec-meta"><strong>20–24 juliol · 4 nits</strong> · Base als peus del Tourmalet</div>
   </div>
 
   <!-- DIA 1 -->
   <div class="day-card" onclick="toggleDay(this)">
-    <div class="day-header">
+    <div class="day-hdr">
       <div class="day-num">Dg. 20</div>
-      <div class="day-title-wrap">
-        <div class="day-title">Arribada + Col du Tourmalet</div>
-        <div class="day-subtitle-preview">Primer contacte amb el Pirineu · vistes 360°</div>
-      </div>
-      <div class="day-chevron">⌄</div>
+      <div class="day-tw"><div class="day-title">Arribada + Tourmalet i rodalies</div><div class="day-prev">Instal·lació · primer contacte · tarda flexible</div></div>
+      <div class="day-chev">⌄</div>
     </div>
     <div class="day-body">
-      <span class="diff diff-facil">Sense esforç</span>
-      <div class="tags"><span class="tag tag-v">Vistes</span><span class="tag tag-n">Natura</span></div>
-      <div class="day-desc">
-        Dia d'arribada i instal·lació. Quan estigueu instal·lats, pugeu en cotxe al <strong>Col du Tourmalet</strong> (2.115 m), el port de muntanya pavimentat més alt dels Pirineus i una de les pujades més llegendàries del Tour de France —la bicicleta gegant al cim us ho recordarà. Des del coll, les vistes abasten les valls d'Aure i de Campan, el Pic du Midi de Bigorre amb el seu observatori, i si el cel és clar, es veuen les crestes fins al Vignemale. Cavalls i alpacas campegen lliures pel cim sense que ningú els molesti.
-        <br><br>
-        Si teniu energia, hi ha un passeig curt de 30 minuts pel crestes fins al coll veí que amplia les vistes cap al sud. Si no, n'hi ha prou d'asseure's al cafè del cim i absorbir que sou aquí.
-      </div>
-      <div class="day-tip"><b>Logística:</b> 15 min en cotxe des de Varetja · Cafè i lavabos al cim · Pot fer molt de vent: porta una capa</div>
-      <button class="maps-btn maps-btn-g maps-btn-main" onclick="openMaps('Col du Tourmalet',42.9082,0.1452)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Col du Tourmalet · Maps
+      <span class="diff df">Sense esforç</span>
+      <div class="tags"><span class="tag tv">Vistes</span><span class="tag tn">Natura</span></div>
+      <div class="ddesc">Dia d'arribada. Un cop instal·lats, pujeu en cotxe al <strong>Col du Tourmalet</strong> (2.115 m) —el port pavimentat més alt dels Pirineus i icona del Tour de France. Les vistes abasten les valls d'Aure i Campan, el Pic du Midi amb l'observatori, i les crestes fins al Vignemale. Cavalls i alpacas campegen lliures. Si voleu anar una mica més amunt, el Pic de Nheuvièlha permet pujar en cotxe uns centenars de metres més per sobre i ampliar el panorama.</div>
+      <div class="dtip"><b>15 min cotxe</b> · Pot fer molt de vent: porta capes · Cafè al cim</div>
+      <button class="mbtn mbtn-g mbtn-main" onclick="openMaps(42.9082,0.1452)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Col du Tourmalet
       </button>
-      <div class="complements-label">També a prop · per completar el dia</div>
-      <div class="complements-grid">
-        <div class="complement-item">
-          <div class="complement-name">Pic du Midi de Bigorre</div>
-          <div class="complement-desc">Observatori astronòmic a 2.877 m accessible en telecabina des de La Mongie. Museu i vistes extraordinàries. 20 min cotxe + telecabina.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('Pic du Midi de Bigorre télécabine',42.9368,0.1420)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+      <div class="acts-label">Opcions per completar el dia</div>
+      <div class="acts-grid">
+        <div class="act-card">
+          <div class="act-name">Pic de Nheuvièlha</div>
+          <div class="act-meta">🟢 Fàcil · en cotxe + caminada opcional</div>
+          <div class="act-desc">Cresta sobre el Tourmalet accessible en cotxe. Vistes de 360° cap a tots dos versants. 10 min des del coll.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.9100,0.1600)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Barèges · poble termal</div>
-          <div class="complement-desc">Petit poble de muntanya als peus del Tourmalet amb aigües termals. Passeig per la riera i sopar tranquil. 10 min cotxe.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('Barèges village Hautes-Pyrénées',42.8965,0.0645)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Pic du Midi de Bigorre</div>
+          <div class="act-meta">🟢 Fàcil · telecabina des de La Mongie</div>
+          <div class="act-desc">Observatori astronòmic a 2.877 m. Museu espai, terrassa sobre els núvols. Una de les vistes més impressionants dels Pirineus. Cal reserva.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.9368,0.1420)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">La Mongie · estació d'esquí a l'estiu</div>
-          <div class="complement-desc">Punt d'inici de moltes rutes de senderisme. A l'estiu és tranquil·la i permet accedir al Tourmalet des de l'est.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('La Mongie station Hautes-Pyrénées',42.9151,0.1614)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Vertige de l'Adour 🧗</div>
+          <div class="act-meta">🟠 Aventura · via ferrata i tirolina</div>
+          <div class="act-desc">Parc d'aventura a Bagnères-de-Bigorre amb tirolina, via ferrata i ponts tibetans sobre el riu. Perfecte per als joves. 30 min cotxe.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(43.0650,0.1520)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+          </button>
+        </div>
+        <div class="act-card">
+          <div class="act-name">Barèges · poble termal</div>
+          <div class="act-meta">🟢 Sense esforç · 10 min cotxe</div>
+          <div class="act-desc">Poble de muntanya amb aigües termals als peus del Tourmalet. Passeig per la riera, sopar tranquil, ambient autèntic sense turisme massiu.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.8965,0.0645)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
       </div>
@@ -205,56 +240,67 @@
 
   <!-- DIA 2 -->
   <div class="day-card" onclick="toggleDay(this)">
-    <div class="day-header">
+    <div class="day-hdr">
       <div class="day-num">Dl. 21</div>
-      <div class="day-title-wrap">
-        <div class="day-title">Circo de Gavarnie</div>
-        <div class="day-subtitle-preview">La cascada més alta dels Pirineus · 5 km per pista plana</div>
-      </div>
-      <div class="day-chevron">⌄</div>
+      <div class="day-tw"><div class="day-title">Gavarnie — Circ i cascada</div><div class="day-prev">Passeig pla 5 km · cascada 422 m · dinar al refugi</div></div>
+      <div class="day-chev">⌄</div>
     </div>
     <div class="day-body">
-      <span class="diff diff-facil">Fàcil · 5 km · +150 m</span>
-      <div class="tags"><span class="tag tag-s">Senderisme</span><span class="tag tag-v">Vistes</span><span class="tag tag-f">Familiar</span></div>
-      <div class="day-desc">
-        Un dels grans clàssics dels Pirineus, i és clàssic per una raó molt bona. Des del poble de Gavarnie s'obre una pista ampla vora el torrent de l'Ossoue que porta fins al peu del circ en poc més d'una hora, sense desnivell significatiu. Al llarg del camí, el circ s'obre lentament davant vostre com un teatre natural: parets de calcària de 1.500 m d'alçada, nevades permanents a les cornises superiors, i al centre la <strong>Grande Cascade de Gavarnie</strong>, la cascada de 422 m més alta dels Pirineus, que a finals de juliol porta una bona quantitat d'aigua.
-        <br><br>
-        L'<strong>Hôtel du Cirque et de la Cascade</strong>, al peu de les parets, és el lloc ideal per dinar amb les millors vistes possibles. Si teniu ganes d'arribar fins a la base de la cascada, s'hi pot pujar per terreny sense camí, amb uns 200 m de desnivell addicional que aporten una perspectiva completament diferent: la cascada us cobrirà i la boira d'aigua es notarà a la cara.
-        <br><br>
-        El poble de <strong>Gavarnie</strong> en si val la pena: cases de pedra, botigues de formatge i salaisons locals, i un ambient de muntanya molt autèntic. Victor Hugo el va descriure com "la natura en majúscules".
-      </div>
-      <div class="day-tip"><b>Pràctic:</b> 30 min cotxe des de Varetja · Aparca al poble (7 €, tot el dia) · Ves abans de les 9h: a juliol és molt concorregut a partir del migdia · La tornada per la banda nord de la riera és lleugerament diferent i dona varietat</div>
-      <button class="maps-btn maps-btn-g maps-btn-main" onclick="openMaps('Cirque de Gavarnie',42.7003,-0.0163)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Circo de Gavarnie · Maps
+      <span class="diff df">Fàcil · 5 km · +150 m</span>
+      <div class="tags"><span class="tag ts">Senderisme</span><span class="tag tv">Vistes</span><span class="tag tf">Familiar</span></div>
+      <div class="ddesc">Des del poble de <strong>Gavarnie-Gèdre</strong> s'obre una pista ampla vora el torrent fins al peu del circ en 1h30. La <strong>Grande Cascade</strong> (422 m, la més alta dels Pirineus) és inesborrable. Al peu de les parets de 1.500 m, el refugi ofereix dinar amb vista. Si teniu ganes, la base de la cascada s'arriba a peu per terreny sense camí (+200 m addicionals de desnivell). Gavarnie el va descriure Victor Hugo com "la natura en majúscules".</div>
+      <div class="dtip"><b>30 min cotxe</b> · Ves abans de les 9h a juliol · Aparca al poble (7 €)</div>
+      <button class="mbtn mbtn-g mbtn-main" onclick="openMaps(42.7003,-0.0163)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Cirque de Gavarnie
       </button>
-      <div class="complements-label">També a prop · per completar el dia</div>
-      <div class="complements-grid">
-        <div class="complement-item">
-          <div class="complement-name">Gorges de Héas</div>
-          <div class="complement-desc">Gorja lateral a 15 min de Gavarnie. Passeig de menys d'1h entre parets i cascadetes. Ideal si arriba tard o es vol allargar el dia.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('Gorges de Héas Hautes-Pyrénées',42.7735,-0.0541)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+      <div class="acts-label">Opcions per ampliar o combinar</div>
+      <div class="acts-grid">
+        <div class="act-card">
+          <div class="act-name">Circo d'Estaubé</div>
+          <div class="act-meta">🟢 Fàcil · 8 km · +250 m</div>
+          <div class="act-desc">El circ veí de Gavarnie, molt menys concorregut. Ruta plana fins al Lac des Gloriettes i el Barrage des Gloriettes. Entorn salvatge i tranquil.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.7200,-0.0450)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Gèdre · perspectiva alternativa</div>
-          <div class="complement-desc">Poble just abans de Gavarnie. Des d'aquí surt el GR10 per la banda alta de la vall, amb vistes al circ sense gairebé ningú al camí.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('Gèdre village Hautes-Pyrénées',42.7528,-0.0322)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Lac des Gloriettes + Barrage</div>
+          <div class="act-meta">🟢 Fàcil · accessible en cotxe</div>
+          <div class="act-desc">Llac d'alta muntanya i embassament al peu del Circ d'Estaubé. La carretera arriba fins a la vora, espectacular i poc visitat.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.7211,-0.0479)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Grottes de Bétharram</div>
-          <div class="complement-desc">Coves espectaculars a 45 min. Visita guiada en barca i tren de muntanya subterrani. Una de les millors atraccions familiars de la zona. Cal reserva.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('Grottes de Bétharram',43.1020,-0.1881)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Circ de Tromosa</div>
+          <div class="act-meta">🟠 Moderat · ruta lateral menys coneguda</div>
+          <div class="act-desc">Circ glacial petit i poc freqüentat entre Gavarnie i Estaubé. Flora alpina excepcional. Ideal per als qui busquen solitud.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.7100,-0.0310)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Luz-Saint-Sauveur · mercat</div>
-          <div class="complement-desc">Mercat els dimecres i dissabtes. Pont dels Templaris del s. XIV. Molt bo per combinar amb la tornada de Gavarnie. 20 min cotxe.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('Luz-Saint-Sauveur village',42.8707,-0.0032)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Ascent al Taillón 🏔</div>
+          <div class="act-meta">🔴 Exigent · 3.144 m · 6h · +1.100 m</div>
+          <div class="act-desc">El cim pirinencs més accessible dels 3.000 m. Des de Gavarnie per la Brecha de Roldán. Per a caminadors experimentats. Vistes del Monte Perdido, Ordesa i França.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.6855,-0.0155)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+          </button>
+        </div>
+        <div class="act-card">
+          <div class="act-name">Pont Napoléon · Luz</div>
+          <div class="act-meta">🟢 Sense esforç · en cotxe</div>
+          <div class="act-desc">Pont espectacular sobre un abisme de 65 m construït per ordre de Napoleó III. Molt fotogènic. A Luz-Saint-Sauveur, 20 min de Gavarnie.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.8779,-0.0072)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+          </button>
+        </div>
+        <div class="act-card">
+          <div class="act-name">Grottes de Bétharram 🦇</div>
+          <div class="act-meta">🟢 Familiar · barca + tren subterrani</div>
+          <div class="act-desc">Coves espectaculars amb visita en barca i tren de muntanya subterrani. Una de les millors atraccions familiars de la zona. Cal reserva. 45 min cotxe.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(43.1020,-0.1881)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
       </div>
@@ -263,52 +309,54 @@
 
   <!-- DIA 3 -->
   <div class="day-card" onclick="toggleDay(this)">
-    <div class="day-header">
+    <div class="day-hdr">
       <div class="day-num">Dt. 22</div>
-      <div class="day-title-wrap">
-        <div class="day-title">Marcadau + Refuge Wallon</div>
-        <div class="day-subtitle-preview">Vall salvatge fins al refugi · ruta amb més recorregut</div>
-      </div>
-      <div class="day-chevron">⌄</div>
+      <div class="day-tw"><div class="day-title">Cauterets — Vallée du Marcadau / Lac de Gaube</div><div class="day-prev">Vall salvatge · óssos bruns · Refuge Wallon</div></div>
+      <div class="day-chev">⌄</div>
     </div>
     <div class="day-body">
-      <span class="diff diff-moderat">Moderat · 14 km · +400 m · 4–5h</span>
-      <div class="tags"><span class="tag tag-s">Senderisme</span><span class="tag tag-v">Vistes</span><span class="tag tag-n">Natura</span></div>
-      <div class="day-desc">
-        Des del <strong>Pont d'Espagne</strong> (Cauterets), en lloc d'agafar el telecabina, proposem avui la ruta a peu per la <strong>Vallée du Marcadau</strong>: una de les valls més belles i preservades del Pirineu francès. El camí puja suaument vora el torrent del Marcadau entre boscos de pi i abets, praderies d'alta muntanya plenes de gencianes i aranyoners, fins arribar al <strong>Refuge Wallon</strong> (1.865 m), un refugi ben equipat a 7 km de l'inici.
-        <br><br>
-        El Marcadau és un dels pocs llocs on s'observen regularment <strong>óssos bruns pirinencs</strong> —no us preocupeu, no hi ha risc, però val la pena dur prismàtics i anar atents a les praderies obertes. Isards i marmotes pràcticament garantits. Al refuge es pot dinar (reserva recomanada) i tornar relaxadament per la mateixa ruta.
-        <br><br>
-        Si preferiu una jornada més curta, l'opció original —<strong>telecabina + Lac de Gaube</strong> (45 min de passejada plana)— és igualment fantàstica i apte per a tothom.
-      </div>
-      <div class="day-tip"><b>Logística:</b> 45 min cotxe des de Varetja · Aparca al Pont d'Espagne (8 €) · Porta dinar si no reserves al refuge · Ruta senyalitzada i molt clara</div>
-      <button class="maps-btn maps-btn-g maps-btn-main" onclick="openMaps('Pont d\'Espagne Cauterets',42.8509,-0.1402)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Pont d'Espagne · Maps
+      <span class="diff dm2">Moderat · 14 km · +400 m · 4–5h</span>
+      <div class="tags"><span class="tag ts">Senderisme</span><span class="tag tv">Vistes</span><span class="tag tn">Natura</span></div>
+      <div class="ddesc">Des del <strong>Pont d'Espagne</strong>, la <strong>Vallée du Marcadau</strong> puja suaument per boscos d'avets i praderies fins al <strong>Refuge Wallon</strong> (1.865 m). Una de les valls millor preservades dels Pirineus —óssos bruns, isards i marmotes. El Marcadau és el riu que alimenta el Lac de Gaube. <br><br>Si preferiu menys desnivell: la <strong>telecabina de Pont d'Espagne</strong> puja a 1.800 m i des d'allí 45 min de camí pla fins al <strong>Lac de Gaube</strong> turquesa amb el Vignemale al fons.</div>
+      <div class="dtip"><b>45 min cotxe</b> · Aparca al Pont d'Espagne (8 €) · Porta dinar si no reserves al refugi</div>
+      <button class="mbtn mbtn-g mbtn-main" onclick="openMaps(42.8509,-0.1402)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Pont d'Espagne
       </button>
-      <button class="maps-btn maps-btn-g maps-btn-main" onclick="openMaps('Refuge Wallon Cauterets',42.8201,-0.1947)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Refuge Wallon · Maps
+      <button class="mbtn mbtn-g mbtn-main" onclick="openMaps(42.8314,-0.1396)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lac de Gaube
       </button>
-      <div class="complements-label">Si opteu per la versió Lac de Gaube · punts d'interès</div>
-      <div class="complements-grid">
-        <div class="complement-item">
-          <div class="complement-name">Lac de Gaube</div>
-          <div class="complement-desc">Llac turquesa a 1.725 m amb el Vignemale al fons. Des del cim del telecabina, 45 min de camí pla. Restaurant al llac. Pot haver-hi óssos a la zona.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('Lac de Gaube Cauterets',42.8314,-0.1396)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+      <div class="acts-label">Opcions per ampliar</div>
+      <div class="acts-grid">
+        <div class="act-card">
+          <div class="act-name">Refuge des Oulettes de Gaube</div>
+          <div class="act-meta">🟠 Moderat · +1h30 des del Lac de Gaube</div>
+          <div class="act-desc">Des del llac, 1h30 addicionals fins al refugi als peus del Vignemale (3.298 m) amb glacera visible. Per als membres amb ganes d'anar més amunt.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.7927,-0.1411)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Cauterets · poble termal</div>
-          <div class="complement-desc">Poble d'estiueig elegant del s. XIX. Passeig pel centre, termes Cesar amb circuit d'aigües (relax opcional a la tarda). Botigues de confits pirinencs.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('Cauterets village Hautes-Pyrénées',42.8902,-0.1120)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Hautacam 🚵</div>
+          <div class="act-meta">🟠 Aventura · bici de muntanya / MTB</div>
+          <div class="act-desc">Estació d'estiu amb pistes de descens en bici (MTB) i lloguer de material. Una pujada legendària del Tour. Ideal per als joves. 20 min cotxe.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(43.0032,-0.0289)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Refuge des Oulettes de Gaube</div>
-          <div class="complement-desc">Per als qui vulguin allargar: des del Lac de Gaube, 1h30 més fins al refugi als peus del Vignemale (3.298 m). Vistes de glacier. Opció per als més actius.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('Refuge des Oulettes de Gaube',42.7927,-0.1411)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Cauterets · termes i poble</div>
+          <div class="act-meta">🟢 Sense esforç · relax</div>
+          <div class="act-desc">Poble termal del s. XIX elegant. Termes Cesar amb circuit d'aigües termals. Botigues de confits i pastilles de menta locals. Bon lloc per a la tarda.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.8902,-0.1120)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+          </button>
+        </div>
+        <div class="act-card">
+          <div class="act-name">Lourdes · Basílica i Pic du Jer</div>
+          <div class="act-meta">🟢 Cultural · 35 min cotxe</div>
+          <div class="act-desc">La Basílica de Nostra Senyora del Rosari és un monument singular. Combina amb el funicular del Pic du Jer per tenir vistes panoràmiques sobre la plana.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(43.0945,-0.0462)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
       </div>
@@ -317,134 +365,139 @@
 
   <!-- DIA 4 -->
   <div class="day-card" onclick="toggleDay(this)">
-    <div class="day-header">
+    <div class="day-hdr">
       <div class="day-num">Dc. 23</div>
-      <div class="day-title-wrap">
-        <div class="day-title">Lac d'Estaing + Luz-Saint-Sauveur</div>
-        <div class="day-subtitle-preview">Llac de muntanya tranquil · poble medieval · mercat</div>
-      </div>
-      <div class="day-chevron">⌄</div>
+      <div class="day-tw"><div class="day-title">Lac d'Estaing + Luz-Saint-Sauveur</div><div class="day-prev">Llac tranquil · poble medieval · mercat</div></div>
+      <div class="day-chev">⌄</div>
     </div>
     <div class="day-body">
-      <span class="diff diff-facil">Fàcil · 3 km · sense desnivell</span>
-      <div class="tags"><span class="tag tag-n">Natura</span><span class="tag tag-p">Poble</span><span class="tag tag-f">Familiar</span></div>
-      <div class="day-desc">
-        Dia de ritme diferent, més tranquil, per equilibrar les jornades de senderisme. Matí al <strong>Lac d'Estaing</strong> (Vallée d'Azun, 1.161 m): un llac de muntanya de color verd fosc envoltat de boscos d'avets, on vaques amb esquelles i ponis campegen a prop de la vora. La passejada circular pel llac (3 km, completament plana, sense cap desnivell) és ideal per anar amb calçat lleuger. Hi ha zona de pic-nic excel·lent a la vora, i un restaurant senzill al càmping adjacent. L'ambient és molt més tranquil que els grans llacs de la zona.
-        <br><br>
-        Tarda: 20 minuts de cotxe fins a <strong>Luz-Saint-Sauveur</strong>, un dels pobles medievals més interessants de la zona. El <strong>Pont dels Templaris</strong> del s. XIV, amb la seva torre defensiva única al Pirineu, és el punt fort. L'Église des Templiers al costat, del s. XII, amaga un interior sorprenentment ben conservat. Mercat els dimecres i dissabtes —si hi coincidia, no us el perdeu.
-      </div>
-      <div class="day-tip"><b>Logística:</b> Lac d'Estaing: 40 min cotxe · Porta roba per banyar-se al llac (l'aigua és freda però apetible) · Luz-Saint-Sauveur: 20 min des del llac</div>
-      <button class="maps-btn maps-btn-g maps-btn-main" onclick="openMaps('Lac d\'Estaing Hautes-Pyrénées',42.9068,-0.2075)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lac d'Estaing · Maps
+      <span class="diff df">Fàcil · 3 km · pla</span>
+      <div class="tags"><span class="tag tn">Natura</span><span class="tag tp">Poble</span><span class="tag tf">Familiar</span></div>
+      <div class="ddesc">Dia de ritme tranquil. Matí al <strong>Lac d'Estaing</strong> (Vallée d'Azun): llac de color verd fosc envoltat de boscos, vaques i ponis. Passejada circular de 3 km plana, zona de pic-nic, restaurant senzill. Tarda al <strong>Lus e Sent Sauvaire (Luz-Saint-Sauveur)</strong>: pont dels Templaris del s. XIV, Église des Templiers del s. XII, mercat dimecres i dissabtes.</div>
+      <div class="dtip"><b>40 min cotxe</b> al llac · Porta banyador: l'aigua és freda però apetible al juliol</div>
+      <button class="mbtn mbtn-g mbtn-main" onclick="openMaps(42.9068,-0.2075)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lac d'Estaing
       </button>
-      <button class="maps-btn maps-btn-g maps-btn-main" onclick="openMaps('Luz-Saint-Sauveur',42.8707,-0.0032)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Luz-Saint-Sauveur · Maps
+      <button class="mbtn mbtn-g mbtn-main" onclick="openMaps(42.8707,-0.0032)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Luz-Saint-Sauveur
       </button>
-      <div class="complements-label">També a prop</div>
-      <div class="complements-grid">
-        <div class="complement-item">
-          <div class="complement-name">Col d'Aubisque · tarda</div>
-          <div class="complement-desc">Des d'Estaing, la carretera cap a Gourette passa per l'Aubisque (1.709 m). Parada ràpida amb vistes fantàstiques. En ruta si es vol fer un circuit.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('Col d\'Aubisque',42.9778,-0.3358)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+      <div class="acts-label">Alternatives i complements</div>
+      <div class="acts-grid">
+        <div class="act-card">
+          <div class="act-name">Ibones de Ordicuso</div>
+          <div class="act-meta">🟠 Moderat · des d'Arrens-Marsous</div>
+          <div class="act-desc">Sèrie de llacs d'alta muntanya des d'Arrens-Marsous. Entorn alpí molt tranquil, poc massificat. Una de les joies ocultes de la Vallée d'Azun.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.9050,-0.2800)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Arrens-Marsous · artesania</div>
-          <div class="complement-desc">Poble de pedra a la Vallée d'Azun, en ruta cap al llac. Petit museu d'art i artesania local. Carrer principal molt fotogènic.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('Arrens-Marsous Hautes-Pyrénées',42.9573,-0.2163)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Domaine des Landes 🧗</div>
+          <div class="act-meta">🟠 Aventura · tirolines i via ferrata</div>
+          <div class="act-desc">Parc d'aventura a la Vallée d'Azun amb tirolines, escalada i ponts tibetans. Molt popular entre joves. Consulta horaris i reserva. Prop d'Arrens.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.9400,-0.2100)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Pic du Jer · Lourdes</div>
-          <div class="complement-desc">Funicular fins a 948 m amb vistes als Pirineus i a Lourdes. Visita opcional a la cova de Massabielle si interessa. 45 min cotxe.</div>
-          <button class="maps-btn maps-btn-g" onclick="openMaps('Funiculaire du Pic du Jer Lourdes',43.0837,-0.0442)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Ibón de Anayet</div>
+          <div class="act-meta">🟠 Moderat · 2h · +500 m · des d'El Formigal</div>
+          <div class="act-desc">Un dels ibons més estètics del Pirineu aragonès, amb la Peña Anayet al fons. Pàrking a Anayet (costat espanyol, 45 min cotxe). Ruta senyalitzada.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.7650,-0.3800)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+          </button>
+        </div>
+        <div class="act-card">
+          <div class="act-name">Chemin de la Mâture</div>
+          <div class="act-meta">🟠 Moderat · camí històric exposat</div>
+          <div class="act-desc">Camí excavat a la roca al s. XVII per transportar pins fins al mar. Molt exposat i espectacular, tallat a la paret vertical. Prop de Lescun/Le Somport.</div>
+          <button class="mbtn mbtn-g" onclick="openMaps(42.9050,-0.6300)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- EXTRA A1 -->
-  <div class="extra-divider">Dia extra opcional</div>
+  <div class="extra-div">Dia extra · Allotjament 1</div>
   <div class="extra-card" onclick="toggleExtra(this)">
-    <div class="extra-header">
+    <div class="extra-hdr">
       <div class="extra-icon">✦</div>
-      <div class="extra-title-wrap">
-        <div class="extra-label">Alternativa · Allotjament 1</div>
-        <div class="extra-title">Gorge de Héas + Gèdre / Ruta GR10 Gavarnie alta</div>
-      </div>
-      <div class="extra-chevron">⌄</div>
+      <div class="extra-tw"><div class="extra-lbl">Alternativa</div><div class="extra-ttl">Gorge de Héas + GR10 Gavarnie alta + Circo d'Igüer</div></div>
+      <div class="extra-chev">⌄</div>
     </div>
     <div class="extra-body">
-      <span class="diff diff-facil">Fàcil · tarda tranquil·la</span>
-      <div class="tags"><span class="tag tag-n">Natura</span><span class="tag tag-p">Poble</span></div>
-      <div class="day-desc">
-        Per si teniu un dia extra o voleu una alternativa a algun dels dies anteriors. La <strong>Gorge de Héas</strong> (15 min de Varetja) és una gorja lateral poc visitada amb cascades petites i camí planer entre parets de roca. Des de <strong>Gèdre</strong> surt el GR10 per la banda alta de la vall de Gavarnie, amb vistes al circ des d'una perspectiva diferent i molt menys concorreguda que la ruta del fons. 2h suaus, desnivell moderat.
-      </div>
-      <div class="day-tip"><b>Héas:</b> 30 min de passejada plana · perfecta si es vol descansar les cames · Gèdre: 30 min cotxe des de Varetja</div>
-      <button class="maps-btn maps-btn-g maps-btn-main" onclick="openMaps('Gèdre village Hautes-Pyrénées',42.7528,-0.0322)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Gèdre · Maps
+      <span class="diff df">Fàcil a moderat</span>
+      <div class="ddesc">La <strong>Gorge de Héas</strong> (15 min de Varetja) és una gorja poc visitada amb cascades i camí planer, perfecta si un dia fa vent a cota alta. Des de <strong>Gèdre</strong> surt el GR10 per la banda alta de la vall de Gavarnie amb vistes al circ des d'una perspectiva diferent. El <strong>Circo de Igüer</strong> (costat espanyol) és un circ glacial molt poc freqüentat proper a la frontera, accessible des d'Ansó.</div>
+      <button class="mbtn mbtn-g mbtn-main" onclick="openMaps(42.7735,-0.0541)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Gorge de Héas
+      </button>
+      <button class="mbtn mbtn-g mbtn-main" onclick="openMaps(42.8100,-0.7200)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Circo de Igüer
       </button>
     </div>
   </div>
 </section>
 
-<!-- ══════════ ALLOTJAMENT 2: GOURETTE ══════════ -->
+<!-- ═══════════════════════════════════════════
+     ALLOTJAMENT 2 · GOURETTE
+════════════════════════════════════════════ -->
 <section id="s2" class="section">
-  <div class="section-header">
+  <div class="sec-header">
     <h2>Gourette — Vallée d'Ossau</h2>
-    <div class="section-meta"><strong>24–27 de juliol · 3 nits</strong> · Pyrénées-Atlantiques, França</div>
+    <div class="sec-meta"><strong>24–27 juliol · 3 nits</strong> · Pyrénées-Atlantiques, França</div>
   </div>
 
   <!-- DIA 5 -->
   <div class="day-card" onclick="toggleDay(this)">
-    <div class="day-header">
+    <div class="day-hdr">
       <div class="day-num">Dj. 24</div>
-      <div class="day-title-wrap">
-        <div class="day-title">Trasllat + Lac de Bious-Artigues</div>
-        <div class="day-subtitle-preview">La postal pirinenca · Pic du Midi d'Ossau al fons</div>
-      </div>
-      <div class="day-chevron">⌄</div>
+      <div class="day-tw"><div class="day-title">Trasllat Col d'Aubisque + Lac de Bious-Artigues</div><div class="day-prev">Port d'Aubisque · postal pirinenca · Ossau al fons</div></div>
+      <div class="day-chev">⌄</div>
     </div>
     <div class="day-body">
-      <span class="diff diff-facil">Fàcil · 3–5 km · pla</span>
-      <div class="tags"><span class="tag tag-v">Vistes</span><span class="tag tag-n">Natura</span><span class="tag tag-f">Familiar</span></div>
-      <div class="day-desc">
-        El trasllat de Varetja a Gourette ja és espectacular per si sol: la carretera passa pel <strong>Col d'Aubisque</strong> (1.709 m), amb vistes sobre la Vallée d'Ossau i les crestes del Béarn. Feu parada al coll —mereix uns minuts.
-        <br><br>
-        Tarda al <strong>Lac de Bious-Artigues</strong> (1.422 m): la fotografia més reproduïda del Pirineu francès. El llac reflecteix el <strong>Pic du Midi d'Ossau</strong> (2.884 m), un volcà erosionat amb una silueta inconfusible de dues banyes. La passejada circular pel llac (3 km plana) permet veure la muntanya des de tots els angles. Hi ha canoè de lloguer i un restaurant amb crêpes a l'aparcament —perfecte per acabar el dia.
-      </div>
-      <div class="day-tip"><b>Logística:</b> Col d'Aubisque: en ruta · Lac de Bious-Artigues: 45 min cotxe des de Gourette · Arriba d'hora: l'aparcament s'omple a l'estiu · Porta banyador si fa calor</div>
-      <button class="maps-btn maps-btn-b maps-btn-main" onclick="openMaps('Lac de Bious-Artigues Laruns',42.8678,-0.453)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lac de Bious-Artigues · Maps
+      <span class="diff df">Fàcil · 3 km circular · pla</span>
+      <div class="tags"><span class="tag tv">Vistes</span><span class="tag tn">Natura</span><span class="tag tf">Familiar</span></div>
+      <div class="ddesc">El trasllat ja és espectacular: la carretera del <strong>Col d'Aubisque</strong> (1.709 m) amb vistes sobre tota la Vallée d'Ossau. Feu parada obligatòria al coll. Tarda al <strong>Parking de Bious-Artigues / Lac de Bious-Artigues</strong>: la fotografia més reproduïda del Pirineu francès. El llac reflecteix el Pic du Midi d'Ossau (2.884 m). Passejada circular plana de 3 km, canoè de lloguer i restaurant amb crêpes.</div>
+      <div class="dtip"><b>45 min cotxe</b> des de Gourette · Arriba d'hora: l'aparcament s'omple · Porta banyador</div>
+      <button class="mbtn mbtn-b mbtn-main" onclick="openMaps(42.9778,-0.3358)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Col d'Aubisque
       </button>
-      <button class="maps-btn maps-btn-b maps-btn-main" onclick="openMaps('Col d\'Aubisque',42.9778,-0.3358)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Col d'Aubisque · Maps
+      <button class="mbtn mbtn-b mbtn-main" onclick="openMaps(42.8678,-0.453)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lac de Bious-Artigues
       </button>
-      <div class="complements-label">També a prop</div>
-      <div class="complements-grid">
-        <div class="complement-item">
-          <div class="complement-name">Laruns · mercat i poble</div>
-          <div class="complement-desc">Capital de la Vallée d'Ossau. Mercat dimarts i divendres. Cases basques pintades de vermell i verd, formatges AOC, vi de Jurançon local.</div>
-          <button class="maps-btn maps-btn-b" onclick="openMaps('Laruns Pyrénées-Atlantiques',42.9898,-0.4267)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+      <div class="acts-label">Opcions per ampliar</div>
+      <div class="acts-grid">
+        <div class="act-card">
+          <div class="act-name">Lacs d'Ayous 🏔</div>
+          <div class="act-meta">🟠 Moderat · 10 km · +700 m · 4h</div>
+          <div class="act-desc">Des de Bious-Artigues, pujada als llacs d'Ayous (2.288 m) —una sèrie de llacs alpins amb el Pic du Midi d'Ossau omnipresent. Una de les rutes més belles de la zona.</div>
+          <button class="mbtn mbtn-b" onclick="openMaps(42.8550,-0.4850)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Eaux-Bonnes · balneari del s. XIX</div>
-          <div class="complement-desc">Estació termal elegantíssima d'arquitectura Napoleó III. Passeig per jardins, cases senyorials i una atmosfera de pel·lícula d'època. 15 min cotxe.</div>
-          <button class="maps-btn maps-btn-b" onclick="openMaps('Eaux-Bonnes village Pyrénées-Atlantiques',42.9728,-0.3921)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Lac du Montagnon</div>
+          <div class="act-meta">🟠 Moderat · des de Gourette · +400 m</div>
+          <div class="act-desc">Llac d'alta muntanya accessible directament des de Gourette sense cotxe. Ruta de 2h amb vistes sobre la Vallée d'Ossau. Molt tranquil.</div>
+          <button class="mbtn mbtn-b" onclick="openMaps(42.9400,-0.3400)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Ruta Pic de Peyreget</div>
-          <div class="complement-desc">Des del Lac de Bious, opció per als més actius: puja al Peyreget (2.487 m) en 2h30. Vistes directes al Pic du Midi d'Ossau des de l'altura. Exigent.</div>
-          <button class="maps-btn maps-btn-b" onclick="openMaps('Pic de Peyreget Pyrénées',42.8450,-0.4350)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Ibón de Estanés</div>
+          <div class="act-meta">🟠 Moderat · Vall d'Ansó · 2h · +450 m</div>
+          <div class="act-desc">Llac solitari a la frontera pirinenca a la Vall d'Ansó. Un dels racons menys coneguts i més bonics del Pirineu aragonès. 1h cotxe des de Gourette.</div>
+          <button class="mbtn mbtn-b" onclick="openMaps(42.8700,-0.6900)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+          </button>
+        </div>
+        <div class="act-card">
+          <div class="act-name">Laruns + Eaux-Bonnes</div>
+          <div class="act-meta">🟢 Sense esforç · pobles 10–15 min cotxe</div>
+          <div class="act-desc">Laruns: mercat dimarts i divendres, cases basques, formatge d'Ossau-Iraty. Eaux-Bonnes: balneari elegant del s. XIX, arquitectura napoleònica única.</div>
+          <button class="mbtn mbtn-b" onclick="openMaps(42.9898,-0.4267)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
       </div>
@@ -453,43 +506,54 @@
 
   <!-- DIA 6 -->
   <div class="day-card" onclick="toggleDay(this)">
-    <div class="day-header">
+    <div class="day-hdr">
       <div class="day-num">Dv. 25</div>
-      <div class="day-title-wrap">
-        <div class="day-title">Petit Train d'Artouste 🚂</div>
-        <div class="day-subtitle-preview">Tren de muntanya + Lac d'Anglas · dia complet</div>
-      </div>
-      <div class="day-chevron">⌄</div>
+      <div class="day-tw"><div class="day-title">Petit Train d'Artouste 🚂 + Lac d'Anglas</div><div class="day-prev">Tren vintage 2.000 m · marmotes · llac alpí opcional</div></div>
+      <div class="day-chev">⌄</div>
     </div>
     <div class="day-body">
-      <span class="diff diff-moderat">Matí fàcil · tarda moderat opcional · +730 m si s'escala</span>
-      <div class="tags"><span class="tag tag-f">Familiar</span><span class="tag tag-v">Vistes</span><span class="tag tag-n">Natura</span><span class="tag tag-s">Senderisme</span></div>
-      <div class="day-desc">
-        El matí és per al <strong>Petit Train d'Artouste</strong>, el tren de muntanya més alt d'Europa (2.000 m), i una de les activitats més memorables del viatge. Des de Fabrèges, una telecabina puja fins a cota 1.950 m on espera el tren vintage de 1924: vagons oberts que circulen per una cresta durant 10 km amb precipicis als dos costats i vistes als pics de 3.000 m. S'arriba al <strong>Lac d'Artouste</strong>, un llac d'alta muntanya envoltat de granit i neu. Les marmotes surten a rebre tothom. Porta jaqueta: al cim fa fred fins i tot a juliol.
-        <br><br>
-        Si teniu energia a la tarda, des de Gourette (20 min cotxe) surt la ruta cap al <strong>Lac d'Anglas</strong> (2.068 m): 730 m de desnivell en 3h d'ascensió per boscos i cascades fins a un llac alpí de primer ordre. La pujada és exigent però molt gratificant. Si preferiu descansar, Gourette té bons restaurants i la terrassa amb vistes als pics és excel·lent per acabar el dia.
-      </div>
-      <div class="day-tip"><b>Imprescindible:</b> Reserva el tren online dies o setmanes abans (juliol s'omple completament) · 20 min cotxe fins a Fabrèges · Porta jaqueta i snacks per al cim</div>
-      <button class="maps-btn maps-btn-b maps-btn-main" onclick="openMaps('Petit Train d\'Artouste Fabrèges',42.8795,-0.3964)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Petit Train d'Artouste · Maps
+      <span class="diff df">Matí fàcil · tarda moderat opcional (+730 m)</span>
+      <div class="tags"><span class="tag tf">Familiar</span><span class="tag tv">Vistes</span><span class="tag tn">Natura</span><span class="tag ts">Senderisme</span></div>
+      <div class="ddesc">El <strong>Petit Train d'Artouste</strong> (el tren de muntanya més alt d'Europa, 2.000 m) és una de les experiències més memorables del viatge. Telecabina des de Fabrèges + tren vintage obert per crestes amb vistes abismals fins al <strong>Lac d'Artouste</strong>. Marmotes garantides. Porta jaqueta: fa fred al cim. <br><br>Si teniu energia a la tarda: la ruta al <strong>Lac d'Anglas</strong> (2.068 m) des de Gourette —730 m de desnivell, 3h, molt gratificant.</div>
+      <div class="dtip"><b>Reserva el tren online</b> amb dies d'antelació (juliol s'omple) · 20 min cotxe fins a Fabrèges</div>
+      <button class="mbtn mbtn-b mbtn-main" onclick="openMaps(42.8795,-0.3964)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Train d'Artouste
       </button>
-      <button class="maps-btn maps-btn-b maps-btn-main" onclick="openMaps('Lac d\'Anglas Gourette',42.9312,-0.3251)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lac d'Anglas · Maps
+      <button class="mbtn mbtn-b mbtn-main" onclick="openMaps(42.9312,-0.3251)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lac d'Anglas
       </button>
-      <div class="complements-label">Si sobra temps · opcions a prop</div>
-      <div class="complements-grid">
-        <div class="complement-item">
-          <div class="complement-name">Col de Couraduque · vistes ràpides</div>
-          <div class="complement-desc">Port accessible en cotxe des de la Vallée d'Azun. Punt de partida de diverses rutes de senderisme. Vistes sobre tota la Vallée d'Ossau.</div>
-          <button class="maps-btn maps-btn-b" onclick="openMaps('Col de Couraduque Hautes-Pyrénées',42.9914,-0.2030)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+      <div class="acts-label">Alternatives i complements</div>
+      <div class="acts-grid">
+        <div class="act-card">
+          <div class="act-name">Ibonet de Paderna</div>
+          <div class="act-meta">🟠 Moderat · Vall d'Ossau aragonesa</div>
+          <div class="act-desc">Petit llac alpí a la Vall d'Ossau, costat espanyol. Ruta tranquil·la i poc freqüentada. Bona alternativa a la zona francesa per als que volen explorar el límit.</div>
+          <button class="mbtn mbtn-b" onclick="openMaps(42.8200,-0.5100)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Fabrèges · pic-nic al llac</div>
-          <div class="complement-desc">El llac de Fabrèges, just davant de l'estació de telecabina, és molt bonic i tranquil. Perfecte per menjar a l'aire lliure abans o després del tren.</div>
-          <button class="maps-btn maps-btn-b" onclick="openMaps('Lac de Fabrèges Laruns',42.8870,-0.4039)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Lac du Montagnon 🚵</div>
+          <div class="act-meta">🟠 Bici de muntanya / MTB</div>
+          <div class="act-desc">La pista fins al Montagnon és recorreguda habitual de MTB des de Gourette. Gourette té lloguer de bicicletes a l'estiu. Descens molt divertit.</div>
+          <button class="mbtn mbtn-b" onclick="openMaps(42.9400,-0.3400)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+          </button>
+        </div>
+        <div class="act-card">
+          <div class="act-name">La Verna Cave (Pierre-Saint-Martin)</div>
+          <div class="act-meta">🟠 Espeleologia · 1h30 cotxe</div>
+          <div class="act-desc">Una de les cavernes naturals més grans d'Europa. Visites guiades a la sala gegant. Una experiència completament diferent. Prop de la frontera navarresa.</div>
+          <button class="mbtn mbtn-b" onclick="openMaps(42.9900,-0.7700)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+          </button>
+        </div>
+        <div class="act-card">
+          <div class="act-name">Le Somport + Lescun</div>
+          <div class="act-meta">🟢 Cultural + paisatgisme · 45 min cotxe</div>
+          <div class="act-desc">El port de Somport, històric pas de pelegriners del Camí de Sant Jaume. Baixant al costat espanyol: Lescun, el poble de pedra als peus dels Pirineus d'Ansó.</div>
+          <button class="mbtn mbtn-b" onclick="openMaps(42.7983,-0.5267)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
       </div>
@@ -498,143 +562,139 @@
 
   <!-- DIA 7 -->
   <div class="day-card" onclick="toggleDay(this)">
-    <div class="day-header">
+    <div class="day-hdr">
       <div class="day-num">Ds. 26</div>
-      <div class="day-title-wrap">
-        <div class="day-title">Ordesa — Senda dels Caçadors + Cola de Caballo</div>
-        <div class="day-subtitle-preview">La ruta circular completa · desnivell + vistes de cañon</div>
-      </div>
-      <div class="day-chevron">⌄</div>
+      <div class="day-tw"><div class="day-title">Ordesa — Senda dels Caçadors + Cola de Caballo</div><div class="day-prev">Circular completa · 800 m desnivell · el millor de la zona</div></div>
+      <div class="day-chev">⌄</div>
     </div>
     <div class="day-body">
-      <span class="diff diff-exigent">Exigent · 21 km circular · +800 m · 6–7h</span>
-      <div class="tags"><span class="tag tag-s">Senderisme</span><span class="tag tag-v">Vistes</span></div>
-      <div class="day-desc">
-        Donant per fet que els nens estan acostumats a caminar, proposem avui la versió completa d'Ordesa: la <strong>ruta circular per la Senda dels Caçadors i la Cola de Caballo</strong>, considerada una de les millors excursions dels Pirineus.
-        <br><br>
-        Des de la Pradera d'Ordesa, la <strong>Senda dels Caçadors</strong> puja per l'esquena del cañon per un camí estret i exposat que guanya 800 m de desnivell en 3 km —la pujada és intensa, però les vistes que s'obren sobre el cañon a mesura que s'escala no tenen paral·lel. A dalt, el sender travessa el sobreplà entre pins centenaris fins a arribar a les <strong>Gradas de Soaso</strong> i la <strong>Cascada Cola de Caballo</strong> (70 m). La tornada és per la ruta plana de la vall, vora el riu Arazas i passant per les cascades de l'Abanico i l'Estrecho. És una jornada llarga però estructurada: la pujada dura, la baixada suau.
-        <br><br>
-        Si es prefereix una versió menys exigent, la ruta de la vall fins a la Cola de Caballo (12 km anada i tornada, +150 m) és igualment espectacular i apte per a tothom.
-      </div>
-      <div class="day-tip"><b>Logística clau:</b> 1h cotxe des de Gourette · Bus obligatori des de Torla (11 €/parella) · Surt el primer bus possible (8h a l'estiu) per tenir temps a la circular · Porta el dinar</div>
-      <button class="maps-btn maps-btn-b maps-btn-main" onclick="openMaps('Torla-Ordesa parada bus',42.6287,-0.1127)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Torla (bus) · Maps
+      <span class="diff de">Exigent · 21 km circular · +800 m · 6–7h</span>
+      <div class="tags"><span class="tag ts">Senderisme</span><span class="tag tv">Vistes</span></div>
+      <div class="ddesc">La versió completa d'Ordesa: pujada per la <strong>Senda dels Caçadors</strong> (800 m de desnivell en 3 km, molt intensa però les vistes sobre el cañon no tenen paral·lel), travessa del sobraplano fins a les <strong>Gradas de Soaso</strong> i la <strong>Cola de Caballo</strong>, i baixada suau per la ruta del fons de la vall passant per les cascades del Estrecho i l'Abanico. Una jornada completa i memorable.<br><br>Versió suau: ruta de la vall fins a Cola de Caballo (12 km, +150 m) per pista ampla vora el riu.</div>
+      <div class="dtip"><b>1h cotxe</b> des de Gourette · Bus obligatori des de Torla (11 €/parella) · Primer bus a les 8h · Porta dinar</div>
+      <button class="mbtn mbtn-b mbtn-main" onclick="openMaps(42.6287,-0.1127)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Torla (parada bus)
       </button>
-      <button class="maps-btn maps-btn-b maps-btn-main" onclick="openMaps('Senda de los Cazadores Ordesa',42.6491,-0.0577)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Senda dels Caçadors
+      <button class="mbtn mbtn-b mbtn-main" onclick="openMaps(42.6491,-0.0577)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Senda dels Caçadors
       </button>
-      <div class="complements-label">Punts de la ruta · per situar-se</div>
-      <div class="complements-grid">
-        <div class="complement-item">
-          <div class="complement-name">Cascada del Estrecho</div>
-          <div class="complement-desc">Primera cascada gran de la ruta de la vall. Una de les més fotogèniques d'Ordesa, accessible en 1h fàcil des de la Pradera.</div>
-          <button class="maps-btn maps-btn-b" onclick="openMaps('Cascada del Estrecho Ordesa',42.6359,-0.0279)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+      <div class="acts-label">Punts de la ruta + alternatives</div>
+      <div class="acts-grid">
+        <div class="act-card">
+          <div class="act-name">Cascada del Estrecho</div>
+          <div class="act-meta">🟢 En ruta · 1h des de la Pradera</div>
+          <div class="act-desc">Primera gran cascada de la ruta de la vall. Molt fotogènica, accessible en menys de 1h des de la Pradera. Un dels punts més bonics d'Ordesa.</div>
+          <button class="mbtn mbtn-b" onclick="openMaps(42.6359,-0.0279)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Gradas de Soaso</div>
-          <div class="complement-desc">Cascada en graons al sobreplà, just abans de la Cola de Caballo. Alguns la consideren la més bonica d'Ordesa. Ambient molt tranquil a cota alta.</div>
-          <button class="maps-btn maps-btn-b" onclick="openMaps('Gradas de Soaso Ordesa',42.6379,-0.0009)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Gradas de Soaso + Cola de Caballo</div>
+          <div class="act-meta">🟢 Final de ruta · icones d'Ordesa</div>
+          <div class="act-desc">Les Gradas de Soaso (cascada en graons) i la Cola de Caballo (70 m) al peu del Monte Perdido. L'objectiu final de la jornada, sempre gratificant.</div>
+          <button class="mbtn mbtn-b" onclick="openMaps(42.6379,-0.0009)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Cola de Caballo</div>
-          <div class="complement-desc">La cascada final de la ruta. 70 m de caiguda al peu del Monte Perdido. En dies calorosos, la boira d'aigua és un regal. Objectiu principal de la jornada.</div>
-          <button class="maps-btn maps-btn-b" onclick="openMaps('Cola de Caballo waterfall Ordesa',42.6417,0.0099)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Cascada de Sorrosal 💧</div>
+          <div class="act-meta">🟢 Fàcil · Broto · 20 min cotxe</div>
+          <div class="act-desc">Cascada de 100 m al costat de Broto, accessible en 30 min de camí. Es pot combinar amb la visita a Torla i Broto. Molt espectacular a juliol.</div>
+          <button class="mbtn mbtn-b" onclick="openMaps(42.6100,-0.1350)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Bujaruelo · pont medieval</div>
-          <div class="complement-desc">Si es vol allargar el dia o fer una visita independent: pont romànic del s. XIV sobre el riu Ara. Entorn salvatge i molt tranquil. 15 min cotxe des de Torla.</div>
-          <button class="maps-btn maps-btn-b" onclick="openMaps('Puente Bujaruelo Ordesa',42.6950,-0.1062)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Pont de Bujaruelo</div>
+          <div class="act-meta">🟢 Fàcil · 15 min cotxe de Torla</div>
+          <div class="act-desc">Pont romànic medieval sobre el riu Ara en un entorn salvatge. Carretera estreta però molt fotogènica. Perfecte per combinar amb la sortida del bus.</div>
+          <button class="mbtn mbtn-b" onclick="openMaps(42.6950,-0.1062)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- EXTRA A2 -->
-  <div class="extra-divider">Dia extra opcional</div>
+  <div class="extra-div">Dia extra · Allotjament 2</div>
   <div class="extra-card" onclick="toggleExtra(this)">
-    <div class="extra-header">
+    <div class="extra-hdr">
       <div class="extra-icon">✦</div>
-      <div class="extra-title-wrap">
-        <div class="extra-label">Alternativa · Allotjament 2</div>
-        <div class="extra-title">Vallée d'Ossau: Laruns + Eaux-Bonnes + Col d'Aubisque</div>
-      </div>
-      <div class="extra-chevron">⌄</div>
+      <div class="extra-tw"><div class="extra-lbl">Alternativa</div><div class="extra-ttl">Laruns + Eaux-Bonnes + Col d'Aubisque / Mesa de los Tres Reyes</div></div>
+      <div class="extra-chev">⌄</div>
     </div>
     <div class="extra-body">
-      <span class="diff diff-facil">Fàcil · dia tranquil</span>
-      <div class="tags"><span class="tag tag-p">Poble</span><span class="tag tag-n">Natura</span></div>
-      <div class="day-desc">
-        Dia de recuperació o dia extra per completar l'estada. Matí a <strong>Laruns</strong> (mercat dimarts i divendres, cases basques, formatge d'Ossau-Iraty AOC). Continuació a <strong>Eaux-Bonnes</strong>, estació termal del s. XIX amb una arquitectura Napoleó III elegantíssima que no s'assembla a res del que es veu a la resta del viatge. Tarda: puja al <strong>Col d'Aubisque</strong> en cotxe —el mateix port que es travessa en el trasllat, però ara amb temps per seure, mirar i absorbir.
-      </div>
-      <div class="day-tip"><b>Circuit ràpid:</b> Laruns → Eaux-Bonnes (8 min) → Col d'Aubisque (20 min) · Tot en menys d'1h de cotxe total</div>
-      <button class="maps-btn maps-btn-b maps-btn-main" onclick="openMaps('Laruns Pyrénées-Atlantiques',42.9898,-0.4267)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Laruns · Maps
+      <span class="diff df">Fàcil a exigent</span>
+      <div class="ddesc">Opció A (tranquil·la): circuit pels pobles de la Vallée d'Ossau —Laruns, Eaux-Bonnes i Col d'Aubisque. Dia de mercat, arquitectura i vistes sense esforç.<br><br>Opció B (exigent): la <strong>Mesa de los Tres Reyes</strong> (2.428 m) és el cim més alt de Navarra, accessible des de la zona de l'Ansabère/Lescun. Una jornada de 5-6h per a caminadors experimentats amb vistes excepcionals sobre els tres regnes.</div>
+      <button class="mbtn mbtn-b mbtn-main" onclick="openMaps(42.9898,-0.4267)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Laruns
+      </button>
+      <button class="mbtn mbtn-b mbtn-main" onclick="openMaps(42.8600,-0.7500)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Mesa de los Tres Reyes
       </button>
     </div>
   </div>
 </section>
 
-<!-- ══════════ ALLOTJAMENT 3: BOLTAÑA ══════════ -->
+<!-- ═══════════════════════════════════════════
+     ALLOTJAMENT 3 · BOLTAÑA
+════════════════════════════════════════════ -->
 <section id="s3" class="section">
-  <div class="section-header">
+  <div class="sec-header">
     <h2>Boltaña — Sobrarbe, Huesca</h2>
-    <div class="section-meta"><strong>27–30 de juliol · 3 nits</strong> · Pirineu Aragonès, Espanya</div>
+    <div class="sec-meta"><strong>27–30 juliol · 3 nits</strong> · Pirineu Aragonès, a 15 min d'Aínsa</div>
   </div>
 
   <!-- DIA 8 -->
   <div class="day-card" onclick="toggleDay(this)">
-    <div class="day-header">
+    <div class="day-hdr">
       <div class="day-num">Dg. 27</div>
-      <div class="day-title-wrap">
-        <div class="day-title">Trasllat + Sallent de Gállego + Llac de Lanuza</div>
-        <div class="day-subtitle-preview">Vall de Tena · poble de pedra · poble submergit</div>
-      </div>
-      <div class="day-chevron">⌄</div>
+      <div class="day-tw"><div class="day-title">Trasllat + Sallent de Gállego + Lanuza</div><div class="day-prev">Vall de Tena · poble de pedra · poble submergit</div></div>
+      <div class="day-chev">⌄</div>
     </div>
     <div class="day-body">
-      <span class="diff diff-facil">Fàcil · passejada plana · dia de trasllat</span>
-      <div class="tags"><span class="tag tag-p">Poble</span><span class="tag tag-n">Natura</span></div>
-      <div class="day-desc">
-        El trasllat de Gourette a Boltaña es fa per la <strong>Vall de Tena</strong> —una de les valls pirinenques aragoneses més espectaculars. Parada a <strong>Sallent de Gállego</strong>: un dels pobles de pedra millor conservats dels Pirineus aragonesos, amb un nucli medieval fotogènic i mercat artesà a l'estiu. Val la pena caminar pel carrer major i entrar a alguna de les botigues de productes locals.
-        <br><br>
-        Baixant la vall, parada al <strong>Llac de Lanuza</strong>: un embassament construït als anys 70 que va submergir el poble de Lanuza. Les cases del campanar emergeixen quan el nivell baixa a l'estiu, creant una imatge surrealista molt fotogènica. La passejada circular de 5 km per la vora és plana i sense dificultat, amb el Peña Foratata al fons. Tarda: instal·lació a Boltaña.
-      </div>
-      <div class="day-tip"><b>Logística:</b> Sallent i Lanuza estan en ruta, no calen desviaments · La passejada de Lanuza és plana, aparca a Sallent i camina fins al llac (15 min)</div>
-      <button class="maps-btn maps-btn-a maps-btn-main" onclick="openMaps('Sallent de Gállego Huesca',42.7717,-0.332)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Sallent de Gállego · Maps
+      <span class="diff df">Fàcil · passejades planes · dia de trasllat</span>
+      <div class="tags"><span class="tag tp">Poble</span><span class="tag tn">Natura</span></div>
+      <div class="ddesc">Trasllat de Gourette a Boltaña per la <strong>Vall de Tena</strong>. Parada a <strong>Sallent de Gállego</strong>: nucli medieval de pedra fotogènic, mercat artesà a l'estiu. Al baixar la vall: <strong>Lanuza</strong>, l'embassament amb el poble submergit —les cases emergeixen quan baixa el nivell d'estiu, creant una imatge surrealista. Passejada circular de 5 km plana. Tarda: instal·lació a Boltaña i primera visita a la <strong>La Gorga de Boltaña</strong> (piscines naturals al riu just al costat del poble).</div>
+      <div class="dtip">Sallent i Lanuza estan en ruta · Aparca a Sallent i camina fins al llac (15 min)</div>
+      <button class="mbtn mbtn-a mbtn-main" onclick="openMaps(42.7717,-0.332)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Sallent de Gállego
       </button>
-      <button class="maps-btn maps-btn-a maps-btn-main" onclick="openMaps('Presa de Lanuza Huesca',42.7503,-0.3149)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Llac de Lanuza · Maps
+      <button class="mbtn mbtn-a mbtn-main" onclick="openMaps(42.7503,-0.3149)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Llac de Lanuza
       </button>
-      <div class="complements-label">En ruta o a prop</div>
-      <div class="complements-grid">
-        <div class="complement-item">
-          <div class="complement-name">Formigal · estació estiu</div>
-          <div class="complement-desc">A l'estiu Formigal és punt de partida de rutes de bici i senderisme. Es pot pujar en telecabina i veure tota la Vall de Tena des de dalt.</div>
-          <button class="maps-btn maps-btn-a" onclick="openMaps('Formigal estación verano Huesca',42.7808,-0.3543)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+      <div class="acts-label">Opcions per completar el dia</div>
+      <div class="acts-grid">
+        <div class="act-card">
+          <div class="act-name">La Gorga de Boltaña / Pozas 🏊</div>
+          <div class="act-meta">🟢 Bany natural · just a Boltaña</div>
+          <div class="act-desc">Piscines naturals al riu Ara al costat del poble. Gratuïtes, fresques i molt populars. Perfectes per refrescar-se a la tarda d'arribada.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.4730,0.0700)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Biescas · poble de mercat</div>
-          <div class="complement-desc">Poble de la Vall d'Ossau aragonesa, en ruta cap a Boltaña. Bon lloc per aturar-se a dinar. Les Pozas de Biescas (piscines naturals) estan a prop.</div>
-          <button class="maps-btn maps-btn-a" onclick="openMaps('Biescas Huesca',42.6286,-0.3225)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Ibón de Plan</div>
+          <div class="act-meta">🟠 Moderat · Vall de Gistaín · 1h cotxe</div>
+          <div class="act-desc">Llac de muntanya a la Vall de Gistaín accessible en cotxe fins molt a prop. Entorn molt tranquil i poc visitat. Bona opció si s'arriba d'hora.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.6100,0.3800)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Ibon de Millares</div>
-          <div class="complement-desc">Llac d'alta muntanya a la Vall de Gistaín (1h cotxe). Ruta de nivell moderat-alt. Opció per als que volen una escapada exigent un cop a Boltaña.</div>
-          <button class="maps-btn maps-btn-a" onclick="openMaps('Ibón de Millares San Juan de Plan',42.6399,0.4092)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Plan · poble de la Vall de Gistaín</div>
+          <div class="act-meta">🟢 Cultural · 1h cotxe</div>
+          <div class="act-desc">Petit poble de pedra de la Vall de Gistaín famós pel seu carnaval. Arquitectura pirinenca molt autèntica. Molt tranquil i sense turisme massiu.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.5897,0.3656)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+          </button>
+        </div>
+        <div class="act-card">
+          <div class="act-name">Ibón de Anayet 🏔</div>
+          <div class="act-meta">🟠 Moderat · Pàrking Anayet · 2h · +500 m</div>
+          <div class="act-desc">Un dels ibons més estètics del Pirineu. Des del pàrquing de pagament d'Anayet (Formigal), 2h de pujada fins al llac amb la Peña Anayet al fons.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.7650,-0.3800)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
       </div>
@@ -643,49 +703,54 @@
 
   <!-- DIA 9 -->
   <div class="day-card" onclick="toggleDay(this)">
-    <div class="day-header">
+    <div class="day-hdr">
       <div class="day-num">Dl. 28</div>
-      <div class="day-title-wrap">
-        <div class="day-title">Balneari de Panticosa + Ibón de los Baños</div>
-        <div class="day-subtitle-preview">Circ glacial · ibón turquesa · hotels d'època</div>
-      </div>
-      <div class="day-chevron">⌄</div>
+      <div class="day-tw"><div class="day-title">Panticosa + Ibón Azul Superior / Cascada de Los Azules</div><div class="day-prev">Circ glacial · ibons encadenats · jornada exigent</div></div>
+      <div class="day-chev">⌄</div>
     </div>
     <div class="day-body">
-      <span class="diff diff-facil">Fàcil · 40 min circular · sense desnivell</span>
-      <div class="tags"><span class="tag tag-s">Senderisme</span><span class="tag tag-n">Natura</span><span class="tag tag-f">Familiar</span></div>
-      <div class="day-desc">
-        Un dels racons més sorprenents del Pirineu aragonès i un dels menys turístics en relació a la seva bellesa. La carretera puja fins al <strong>Balneari de Panticosa</strong> (1.636 m), un complex termal dels anys 20 amb hotels Belle Époque, inesperadament elegant enmig d'un circ de muntanya glacial. Les façanes blanques i els balcons de fusta contrasten amb les parets de granit dels 3.000 m que ho envolten.
-        <br><br>
-        L'<strong>Ibón de los Baños</strong> és el llac turquesa just davant dels hotels, accessible a peu en 10 minuts. La passejada circular pel circ dura uns 40 minuts i no té cap dificultat. Des d'allí, els més actius poden pujar al <strong>Ibón del Bachimaña Baixo</strong> (2h addicionals, +400 m) per veure els ibons superiors amb el Vignemale al fons. És una de les rutes d'alta muntanya més accessibles de la Vall de Tena.
-        <br><br>
-        Dinar a la terrassa del Balneari amb vistes als pics és un luxe accessible.
-      </div>
-      <div class="day-tip"><b>Pràctic:</b> 30 min cotxe des de Boltaña · Carretera estreta però asfaltada · L'aparcament del balneari és de pagament · Bany termal opcional als hotels del complex</div>
-      <button class="maps-btn maps-btn-a maps-btn-main" onclick="openMaps('Balneario de Panticosa Huesca',42.7592,-0.236)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Balneari de Panticosa · Maps
+      <span class="diff dm2">Moderat–exigent · 4–8 km · +200–700 m</span>
+      <div class="tags"><span class="tag ts">Senderisme</span><span class="tag tn">Natura</span><span class="tag tf">Familiar</span></div>
+      <div class="ddesc">El <strong>Balneari de Panticosa</strong> (1.636 m) és un circ glacial amb hotels Belle Époque inesperadament elegants. L'<strong>Ibón de los Baños</strong> (turquesa, 10 min a peu) és la versió fàcil. Per als que volen pujar: els <strong>Ibones del Bachimaña</strong> i l'<strong>Ibón Azul Superior</strong> (2h addicionals, +500 m) formen una cadena de llacs alpins de primer ordre, culminant a la <strong>Cascada de Los Azules</strong> —una de les cascades menys visitades i més espectaculars de la Vall de Tena.</div>
+      <div class="dtip"><b>30 min cotxe</b> · Carretera estreta asfaltada · Aparca al balneari (pagament) · Dinar a la terrassa dels hotels amb vistes</div>
+      <button class="mbtn mbtn-a mbtn-main" onclick="openMaps(42.7592,-0.236)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Balneari de Panticosa
       </button>
-      <div class="complements-label">Opcions per ampliar el dia</div>
-      <div class="complements-grid">
-        <div class="complement-item">
-          <div class="complement-name">Ibón del Bachimaña · pujada</div>
-          <div class="complement-desc">Des del balneari, 2h de pujada (+400 m) fins als ibons superiors. Paisatge alpí de primera categoria. Per als membres del grup amb ganes de pujar.</div>
-          <button class="maps-btn maps-btn-a" onclick="openMaps('Ibón Bachimaña Panticosa',42.7800,-0.2290)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+      <button class="mbtn mbtn-a mbtn-main" onclick="openMaps(42.7800,-0.2600)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Ibón Azul Superior
+      </button>
+      <div class="acts-label">Opcions per al dia</div>
+      <div class="acts-grid">
+        <div class="act-card">
+          <div class="act-name">Ibón de los Baños · versió fàcil</div>
+          <div class="act-meta">🟢 10 min des del balneari</div>
+          <div class="act-desc">Llac turquesa als peus del circ. Passejada circular de 40 min sense cap dificultat. Perfecta per als membres del grup que volen anar a ritme tranquil.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.7620,-0.2380)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Panticosa · poble i mercat</div>
-          <div class="complement-desc">El poble de Panticosa (baix) té un centre simpàtic amb bars i botigues. Diferent del balneari, és on viu la gent. Molt a prop en cotxe.</div>
-          <button class="maps-btn maps-btn-a" onclick="openMaps('Panticosa pueblo Huesca',42.7264,-0.2448)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Ibón de Acherito 🏔</div>
+          <div class="act-meta">🟠 Moderat · 2h · +500 m · Ansó</div>
+          <div class="act-desc">Un dels ibons amb valoració 5★ dels Pirineus. Ruta des de la Selva de Oza. Marmotas i isards garantits. 1h30 cotxe des de Boltaña.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.8799,-0.7071)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Ibón de Acherito (Ansó)</div>
-          <div class="complement-desc">Un dels ibons amb millor valoració dels Pirineus aragonesos (5★). Ruta de 2h des del Selva de Oza, 500 m desnivell. Un dia de ruta sencera per als actius.</div>
-          <button class="maps-btn maps-btn-a" onclick="openMaps('Ibón de Acherito Ansó Huesca',42.8799,-0.7071)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Poza del Molino 🏊</div>
+          <div class="act-meta">🟢 Bany natural · Broto</div>
+          <div class="act-desc">Piscina natural al riu Ara prop de Broto. Molt popular entre els locals, gratuïta. Perfecta per a la tarda de tornada del Balneari.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.6100,-0.1200)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+          </button>
+        </div>
+        <div class="act-card">
+          <div class="act-name">Cascada de Orós Bajo</div>
+          <div class="act-meta">🟢 Fàcil · Vall de Tena · 30 min cotxe</div>
+          <div class="act-desc">Cascada petita però molt bonica a la Vall de Tena. Accessible amb una caminada curta de menys de 30 min. Poc visitada.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.6900,-0.3500)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
       </div>
@@ -694,157 +759,299 @@
 
   <!-- DIA 10 -->
   <div class="day-card" onclick="toggleDay(this)">
-    <div class="day-header">
+    <div class="day-hdr">
       <div class="day-num">Dt. 29</div>
-      <div class="day-title-wrap">
-        <div class="day-title">Valle de Pineta + Balcó de Pineta + Cascada de La Larri</div>
-        <div class="day-subtitle-preview">La gran pujada del viatge · vistes al Monte Perdido</div>
-      </div>
-      <div class="day-chevron">⌄</div>
+      <div class="day-tw"><div class="day-title">Valle de Pineta — Balcó + La Larri + Cascada del Cinca</div><div class="day-prev">Parets de 1.500 m · jornada gran · Monte Perdido</div></div>
+      <div class="day-chev">⌄</div>
     </div>
     <div class="day-body">
-      <span class="diff diff-exigent">Exigent (Balcó) · +800 m · 5–6h · o Fàcil (vall plana)</span>
-      <div class="tags"><span class="tag tag-s">Senderisme</span><span class="tag tag-v">Vistes</span><span class="tag tag-n">Natura</span></div>
-      <div class="day-desc">
-        La Valle de Pineta és la capçalera tancada més impressionant del Pirineu aragonès: parets verticals de 1.500 m que cauen sobre una praderia plana verda, amb el Monte Perdido (3.355 m) presidint el fons. L'accés des del poble de Bielsa és per una carretera espectacular que travessa el <strong>Túnel de Bielsa</strong> (opcional: entrada per la banda francesa de l'Aragnouet per veure la cascada de l'entrada).
-        <br><br>
-        Teniu dues opcions per al dia. La versió suau: ruta plana de la <strong>Pradera de Pineta</strong> fins al fons del circ (4 km, 1h), i desviació de 20 minuts a la <strong>Cascada de La Larri</strong>, un salt d'aigua de 100 m molt accessible des de la carretera. La versió exigent: el <strong>Balcó de Pineta</strong>, una pujada de 800 m de desnivell en 2h30 fins a una cornisa sobre la vall que ofereix les vistes més espectaculars del viatge. Des d'allí es veu el circ sencer, el Monte Perdido, i l'Aragon fins a França. Reservada per als que tenen les cames preparades.
-        <br><br>
-        Óssos bruns, isards i trencalosses presents a la zona. Porta prismàtics.
-      </div>
-      <div class="day-tip"><b>Logística:</b> 1h cotxe des de Boltaña via Aínsa · El Balcó de Pineta és molt exposat al sol: surt d'hora i porta molta aigua · La Larri és accessible per a tothom, fins i tot amb calçat lleuger</div>
-      <button class="maps-btn maps-btn-a maps-btn-main" onclick="openMaps('Valle de Pineta Bielsa Huesca',42.6897,0.0635)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Valle de Pineta · Maps
+      <span class="diff de">Exigent (Balcó) · +800 m · 5–6h · o Fàcil (vall)</span>
+      <div class="tags"><span class="tag ts">Senderisme</span><span class="tag tv">Vistes</span><span class="tag tn">Natura</span></div>
+      <div class="ddesc">La <strong>Valle de Pineta</strong> és la capçalera tancada més impressionant del Pirineu. Des del <strong>Pàrquing de la Vall de Pineta</strong> teniu tres opcions: ruta plana fins al fons del circ (fàcil), desviació de 20 min a la <strong>Cascada de La Larri</strong> i als <strong>Llanos de La Larri</strong> (praderies alpines bellíssimes), o la gran pujada al <strong>Balcó de Pineta</strong> (+800 m, 3h) per una cornisa sobre la vall. La <strong>Cascada del Cinca</strong> és accessible des del pàrquing amb una caminada de 40 min. El <strong>Túnel de Bielsa</strong> permet fer un circuit entrant per Espanya i sortint per França (o viceversa).</div>
+      <div class="dtip"><b>1h cotxe</b> via Aínsa · Porta molta aigua per al Balcó · Óssos bruns, isards, trencalosses</div>
+      <button class="mbtn mbtn-a mbtn-main" onclick="openMaps(42.6897,0.0635)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Pàrquing Vall de Pineta
       </button>
-      <button class="maps-btn maps-btn-a maps-btn-main" onclick="openMaps('Balcón de Pineta Bielsa',42.6890,0.0487)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Balcó de Pineta · Maps
+      <button class="mbtn mbtn-a mbtn-main" onclick="openMaps(42.6890,0.0487)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Balcó de Pineta
       </button>
-      <button class="maps-btn maps-btn-a maps-btn-main" onclick="openMaps('Cascada de la Larri Bielsa',42.6987,0.0919)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Cascada de La Larri · Maps
-      </button>
-      <div class="complements-label">A prop de Bielsa i Pineta</div>
-      <div class="complements-grid">
-        <div class="complement-item">
-          <div class="complement-name">Túnel de Bielsa-Aragnouet</div>
-          <div class="complement-desc">El túnel fronterer entre España i França té entrada des del costat francès amb vistes a una cascada impressionant a 1.800 m. Circuit opcional.</div>
-          <button class="maps-btn maps-btn-a" onclick="openMaps('Tunnel de Bielsa Aragnouet',42.7482,0.1912)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+      <div class="acts-label">Punts de la zona</div>
+      <div class="acts-grid">
+        <div class="act-card">
+          <div class="act-name">Cascada de La Larri + Llanos</div>
+          <div class="act-meta">🟢 Fàcil · 20 min des de la carretera</div>
+          <div class="act-desc">Cascada de 100 m. Des d'allí s'arriba als Llanos de La Larri (praderies alpines a 1.900 m) amb vistes al Cilindre de Marboré. Molt accessible.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.6987,0.0919)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Bielsa · poble i mercat</div>
-          <div class="complement-desc">Poble als peus de la vall amb bons restaurants. Carnaval de bruixes i óssos famós (febrer), però a l'estiu és tranquil i autèntic.</div>
-          <button class="maps-btn maps-btn-a" onclick="openMaps('Bielsa pueblo Huesca',42.6358,0.2168)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Cascada del Cinca</div>
+          <div class="act-meta">🟢 Fàcil · 40 min des del pàrquing</div>
+          <div class="act-desc">El riu Cinca neix a la capçalera de Pineta en una cascada espectacular. Poc senyalitzada però molt accessible seguint el curs del riu.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.7050,0.1150)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Parzán i Chisagüés</div>
-          <div class="complement-desc">Poblets de pedra quasi deserts entre Bielsa i Pineta. Arquitectura pirinenca ben conservada. Molt fotogènics i sense cap turista.</div>
-          <button class="maps-btn maps-btn-a" onclick="openMaps('Parzán Bielsa Huesca',42.6524,0.1623)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Túnel de Bielsa–Aragnouet</div>
+          <div class="act-meta">🟢 En cotxe · circuit França-Espanya</div>
+          <div class="act-desc">El túnel fronterer permet fer un circuit espectacular: entrar per Bielsa (Espanya), sortir per Aragnouet (França) on hi ha una cascada impresionant a l'entrada.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.7482,0.1912)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+          </button>
+        </div>
+        <div class="act-card">
+          <div class="act-name">Ermitas de Tella 🏛</div>
+          <div class="act-meta">🟢 Cultural · 45 min cotxe · romànic</div>
+          <div class="act-desc">Conjunt d'ermites romàniques medievals sobre un promontori rocós espectacular, en el Geoparc Sobrarbe. Vistes al Cañón de Añisclo. Úniques.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.5550,0.1300)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- DIA 11 (tornada) -->
+  <!-- DIA 11 -->
   <div class="day-card" onclick="toggleDay(this)">
-    <div class="day-header">
+    <div class="day-hdr">
       <div class="day-num">Dc. 30</div>
-      <div class="day-title-wrap">
-        <div class="day-title">Aínsa + Broto + Torla-Ordesa · Tornada</div>
-        <div class="day-subtitle-preview">Pobles medievals · mercat · compres locals</div>
-      </div>
-      <div class="day-chevron">⌄</div>
+      <div class="day-tw"><div class="day-title">Aínsa + Cañón d'Añisclo + Alquézar · Tornada</div><div class="day-prev">Medieval · gorja · ermites · compres · adéu</div></div>
+      <div class="day-chev">⌄</div>
     </div>
     <div class="day-body">
-      <span class="diff diff-facil">Fàcil · passejos curts · dia de tornada</span>
-      <div class="tags"><span class="tag tag-p">Poble</span></div>
-      <div class="day-desc">
-        Últim matí abans de tornar. <strong>Aínsa</strong> (15 min de Boltaña) és un dels pobles medievals més impressionants d'Espanya: una plaça Major porticada del s. XII amb paviment de còdols, el castell normand amb vistes al Sobrarbe i al riu Cinca, i un carrer major ple de botigues d'embotits, formatge, mel i vi del Pirineu. El <strong>Geoparc Sobrarbe</strong>, amb seu al castell, explica la formació geològica dels Pirineus —visita molt recomanada especialment per a nens i joves, gratuïta.
-        <br><br>
-        Si queda temps, continuació a <strong>Broto</strong> (pont medieval sobre el riu Ara, mercat local) i l'inconfusible <strong>Torla-Ordesa</strong>: un poble de pedra als peus del Parc Nacional, amb el perfil de les Tres Sorores al fons, perfecte per al darrer cafè del viatge.
-      </div>
-      <div class="day-tip"><b>Compres recomanades a Aínsa:</b> Formatge de Benasque, longanissa de muntanya, mel de milflors pirinenca, vi DO Somontano · El mercat medieval es fa dissabtes a l'estiu</div>
-      <button class="maps-btn maps-btn-a maps-btn-main" onclick="openMaps('Ainsa pueblo medieval Huesca',42.4171,0.1389)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Aínsa · Maps
+      <span class="diff df">Fàcil · passejos curts · dia de tornada</span>
+      <div class="tags"><span class="tag tp">Poble</span><span class="tag ts">Senderisme</span></div>
+      <div class="ddesc"><strong>Aínsa</strong> (15 min): plaça Major porticada del s. XII, castell amb vistes, Geoparc Sobrarbe al castell (gratuït). Compra formatge, embotits i mel. <br><br>Si hi ha temps i energia: el <strong>Mirador del Cañón de Añisclo</strong> i el <strong>Cañón de Añisclo</strong> (gorja menys turística que Ordesa, molt bonica, 30 min cotxe). O la visita a <strong>Alquézar</strong> (1h cotxe), un dels pobles medievals més bonics d'Aragó, amb les Gorges del Vero i la Col·legiata. La <strong>Pardina del Señor</strong>, una granja-manor medieval restaurada prop d'Aínsa, és un curiós museu etnogràfic.</div>
+      <div class="dtip"><b>Compres a Aínsa:</b> formatge de Benasque, longanissa, mel de milflors, vi DO Somontano</div>
+      <button class="mbtn mbtn-a mbtn-main" onclick="openMaps(42.4171,0.1389)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Aínsa
       </button>
-      <button class="maps-btn maps-btn-a maps-btn-main" onclick="openMaps('Torla-Ordesa Huesca',42.6287,-0.1127)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round      </button>
-      <div class="complements-label">Per completar Aínsa</div>
-      <div class="complements-grid">
-        <div class="complement-item">
-          <div class="complement-name">Geoparc Sobrarbe · Aínsa</div>
-          <div class="complement-desc">Centre d'interpretació al castell. Explica la geologia del Pirineu amb recursos interactius. Molt bo per a adolescents. Gratuït. Dimecres a diumenge.</div>
-          <button class="maps-btn maps-btn-a" onclick="openMaps('Geoparque Sobrarbe Ainsa',42.4179,0.1369)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+      <button class="mbtn mbtn-a mbtn-main" onclick="openMaps(42.3400,0.1300)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Alquézar
+      </button>
+      <div class="acts-label">Opcions per al darrer matí</div>
+      <div class="acts-grid">
+        <div class="act-card">
+          <div class="act-name">Mirador Cañón de Añisclo</div>
+          <div class="act-meta">🟢 En cotxe · vistes sense esforç</div>
+          <div class="act-desc">Mirador sobre la gorja d'Añisclo accessible en cotxe. Vistes del cañon calcari des de dalt, molt diferent de la perspectiva des del fons.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.5700,0.0600)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Cañón de Añisclo</div>
-          <div class="complement-desc">30 min cotxe des de Boltaña. Gorja estreta i ombrívola menys turística que Ordesa. Ruta plana de 1h30 fins al fons. Ideal si hi ha temps.</div>
-          <button class="maps-btn maps-btn-a" onclick="openMaps('Cañón de Añisclo Huesca',42.572,0.054)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">Ermita de San Martín de la Val d'Onsera</div>
+          <div class="act-meta">🟠 Moderat · romànic espectacular</div>
+          <div class="act-desc">Ermita del s. XI encastada a la roca sobre el Barranc de la Val d'Onsera. Accés per camí de 30 min. Una de les joies romàniques menys conegudes d'Aragó.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.1500,-0.2900)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
-        <div class="complement-item">
-          <div class="complement-name">Broto · pont medieval</div>
-          <div class="complement-desc">Pont gòtic del s. XV sobre el riu Ara. Nucli antic de cases de pedra. Mercat local els divendres. 30 min cotxe des de Boltaña.</div>
-          <button class="maps-btn maps-btn-a" onclick="openMaps('Broto puente medieval Huesca',42.6048,-0.1233)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+        <div class="act-card">
+          <div class="act-name">La Pardina del Señor</div>
+          <div class="act-meta">🟢 Cultural · granja medieval · Aínsa</div>
+          <div class="act-desc">Manor medieval restaurada prop d'Aínsa. Museu etnogràfic de la vida rural pirinenca. Molt didàctic per a totes les edats. Productes artesans.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.4300,0.1100)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
+          </button>
+        </div>
+        <div class="act-card">
+          <div class="act-name">Broto + Torla + Cascada de Sorrosal</div>
+          <div class="act-meta">🟢 Fàcil · circuit de pobles</div>
+          <div class="act-desc">Circuit final pels pobles de l'entrada d'Ordesa. Cascada de Sorrosal (100 m) accessible en 30 min des de Broto. Darrer cafè a Torla amb vistes a les Tres Sorores.</div>
+          <button class="mbtn mbtn-a" onclick="openMaps(42.6048,-0.1233)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Maps
           </button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- EXTRA A3 -->
-  <div class="extra-divider">Dia extra opcional</div>
+  <div class="extra-div">Dia extra · Allotjament 3</div>
   <div class="extra-card" onclick="toggleExtra(this)">
-    <div class="extra-header">
+    <div class="extra-hdr">
       <div class="extra-icon">✦</div>
-      <div class="extra-title-wrap">
-        <div class="extra-label">Alternativa · Allotjament 3</div>
-        <div class="extra-title">Cañón de Añisclo + Hecho + Ansó</div>
-      </div>
-      <div class="extra-chevron">⌄</div>
+      <div class="extra-tw"><div class="extra-lbl">Alternativa</div><div class="extra-ttl">Ibón de Estanés + Hecho + Ansó / Cañón Añisclo complet</div></div>
+      <div class="extra-chev">⌄</div>
     </div>
     <div class="extra-body">
-      <span class="diff diff-facil">Fàcil a moderat</span>
-      <div class="tags"><span class="tag tag-s">Senderisme</span><span class="tag tag-p">Poble</span><span class="tag tag-n">Natura</span></div>
-      <div class="day-desc">
-        Dues opcions per al dia extra. Opció A: el <strong>Cañón de Añisclo</strong> (30 min cotxe). Gorja ombrívola menys turística que Ordesa, ruta plana de 1h30 des de la Ripera.
-        <br><br>
-        Opció B: <strong>Hecho i Ansó</strong>, dos dels pobles medievals millor conservats del Pirineu occidental aragonès. Des de la Selva de Oza surt la ruta a l'<strong>Ibón de Acherito</strong> (2h, +500 m) —un dels ibons amb millor valoració de l'Aragó, perfecte com a cloenda de senderisme exigent.
-      </div>
-      <div class="day-tip"><b>Añisclo:</b> aparca al primer pàrquing (Ripera) · <b>Hecho i Ansó:</b> 1h30 cotxe des de Boltaña</div>
-      <button class="maps-btn maps-btn-a maps-btn-main" onclick="openMaps('Cañón de Añisclo Huesca',42.572,0.054)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Cañón de Añisclo · Maps
+      <span class="diff df">Fàcil a moderat</span>
+      <div class="ddesc">Opció A: <strong>Ibón de Estanés</strong> (Vall d'Ansó, 1h30 cotxe) —llac solitari i molt bonic a la frontera. Combinat amb els pobles de <strong>Hecho i Ansó</strong>, dos dels millors pobles medievals del Pirineu occidental, i opcionalment l'<strong>Ibón de Acherito</strong> des de la Selva de Oza (2h, +500 m).<br><br>Opció B: el <strong>Cañón d'Añisclo complet</strong> (ruta fins al Refugi de Millaris, 3h anada, +600 m) —la versió llarga de la gorja, que puja fins a una zona alpina fantàstica i quasi sense gent.</div>
+      <button class="mbtn mbtn-a mbtn-main" onclick="openMaps(42.8700,-0.6900)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Ibón de Estanés
       </button>
-      <button class="maps-btn maps-btn-a maps-btn-main" onclick="openMaps('Hecho pueblo Huesca Pirineos',42.7383,-0.7500)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Hecho · Maps
+      <button class="mbtn mbtn-a mbtn-main" onclick="openMaps(42.572,0.054)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Cañón d'Añisclo
       </button>
     </div>
   </div>
 </section>
 
-<footer>Pirineu Aragonès &amp; Navarrès · Juliol 2025 &nbsp;·&nbsp; Planificació del viatge</footer>
+<!-- ═══════════════════════════════════════════
+     EXPLORADOR DE LLOCS (filtres)
+════════════════════════════════════════════ -->
+<div id="explorer" class="section">
+  <div class="exp-title">Explorador de llocs</div>
+  <div class="exp-sub">Filtra per tipus d'activitat i vés directament al lloc que t'interessa</div>
+
+  <div class="filter-bar">
+    <button class="fbtn fall active" onclick="filterPlaces('all',this)">Tots</button>
+    <button class="fbtn fs" onclick="filterPlaces('senderisme',this)">🥾 Senderisme</button>
+    <button class="fbtn fc" onclick="filterPlaces('cascada',this)">💧 Cascades</button>
+    <button class="fbtn fi" onclick="filterPlaces('ibon',this)">🏔 Ibons</button>
+    <button class="fbtn fp" onclick="filterPlaces('poble',this)">🏘 Pobles</button>
+    <button class="fbtn fav" onclick="filterPlaces('aventura',this)">⚡ Aventura</button>
+    <button class="fbtn fv" onclick="filterPlaces('vistes',this)">🔭 Vistes</button>
+    <button class="fbtn fnat" onclick="filterPlaces('natura',this)">🌿 Natura/Bany</button>
+  </div>
+  <div class="results-info" id="results-info">Mostrant tots els llocs</div>
+  <div class="places-grid" id="places-grid"></div>
+</div>
+
+<footer>Pirineu Aragonès &amp; Navarrès · Juliol 2025 · Planificació familiar</footer>
 
 <script>
-  function showSection(id, btn) {
-    document.querySelectorAll('.section').forEach(s => s.classList.remove('visible'));
-    document.querySelectorAll('.tab-btn').forEach(b => b.className = 'tab-btn');
+// ── DATA ──────────────────────────────────────────────
+const PLACES = [
+  // ZONA VARETJA
+  {name:"Col du Tourmalet",zone:"Varetja",zc:"zg",cats:["vistes","natura"],diff:"f",diffTxt:"Sense esforç · en cotxe",time:"15 min cotxe",desc:"El port pavimentat més alt dels Pirineus (2.115 m), icona del Tour de France. Vistes de 360° sobre les valls d'Aure i Campan, el Pic du Midi i el Vignemale. Cavalls i alpacas lliures.",tip:"Pot fer vent: porta capes",lat:42.9082,lng:0.1452},
+  {name:"Pic de Nheuvièlha",zone:"Varetja",zc:"zg",cats:["vistes"],diff:"f",diffTxt:"Sense esforç · en cotxe",time:"20 min cotxe",desc:"Cresta sobre el Tourmalet accessible per carretera. Panoràmica 360° inèdita sobre els dos versants pirinencs. Molt poc visitat.",tip:"Combina bé amb el Tourmalet",lat:42.9100,lng:0.1600},
+  {name:"Pic du Midi de Bigorre",zone:"Varetja",zc:"zg",cats:["vistes","natura"],diff:"f",diffTxt:"Fàcil · telecabina",time:"30 min cotxe + telecabina",desc:"Observatori astronòmic a 2.877 m. Museu espai i terrassa sobre els núvols. Una de les vistes més impressionants dels Pirineus. Cal reserva online.",tip:"Reserva anticipada imprescindible",lat:42.9368,lng:0.1420},
+  {name:"Cirque de Gavarnie",zone:"Varetja",zc:"zg",cats:["senderisme","vistes"],diff:"f",diffTxt:"Fàcil · 5 km · +150 m",time:"30 min cotxe + 1h30 caminada",desc:"El gran clàssic del Pirineu. Passeig pla fins al peu del circ. La Grande Cascade de 422 m és la més alta dels Pirineus. Refugi al peu per dinar.",tip:"Ves d'hora (abans de 9h) a juliol",lat:42.7003,lng:-0.0163},
+  {name:"Circo d'Estaubé",zone:"Varetja",zc:"zg",cats:["senderisme","natura"],diff:"f",diffTxt:"Fàcil · 8 km · +250 m",time:"35 min cotxe + 2h caminada",desc:"El circ veí de Gavarnie, molt menys concorregut. Ruta tranquil·la fins al Barrage des Gloriettes. Entorn salvatge i idíl·lic sense turisme massiu.",tip:"Perfecte alternativa a Gavarnie",lat:42.7200,lng:-0.0450},
+  {name:"Lac des Gloriettes",zone:"Varetja",zc:"zg",cats:["natura","vistes"],diff:"f",diffTxt:"Sense esforç · en cotxe",time:"35 min cotxe",desc:"Llac i embassament al peu del Circo d'Estaubé. La carretera arriba fins a la vora. Entorn alpí espectacular i poc visitat.",tip:"Carretera estreta però bona",lat:42.7211,lng:-0.0479},
+  {name:"Circ de Tromosa",zone:"Varetja",zc:"zg",cats:["senderisme","natura"],diff:"m",diffTxt:"Moderat · lateral entre Gavarnie i Estaubé",time:"35 min cotxe + 2h30",desc:"Circ glacial petit i poc freqüentat entre Gavarnie i Estaubé. Flora alpina excepcional, solitud garantida.",tip:"Per als qui busquen sortir de ruta",lat:42.7100,lng:-0.0310},
+  {name:"Taillón (3.144 m)",zone:"Varetja",zc:"zg",cats:["senderisme","vistes"],diff:"e",diffTxt:"Exigent · 6h · +1.100 m",time:"30 min cotxe + 6h caminada",desc:"El cim pirinencs més accessible dels 3.000 m. Des de Gavarnie per la Brecha de Roldán. Per a caminadors experimentats. Vistes del Monte Perdido i Ordesa.",tip:"Inici molt d'hora, guia recomanat",lat:42.6855,lng:-0.0155},
+  {name:"Vallée du Marcadau",zone:"Varetja",zc:"zg",cats:["senderisme","natura"],diff:"m",diffTxt:"Moderat · 14 km · +400 m",time:"45 min cotxe + 4–5h",desc:"Una de les valls més ben preservades dels Pirineus. Óssos bruns, isards i marmotes. Refugi Wallon al final. La versió curta és el Lac de Gaube (telecabina + 45 min pla).",tip:"Porta dinar per menjar al refugi",lat:42.8200,lng:-0.1947},
+  {name:"Lac de Gaube",zone:"Varetja",zc:"zg",cats:["senderisme","natura","ibon"],diff:"f",diffTxt:"Fàcil · telecabina + 45 min pla",time:"45 min cotxe + telecabina + 45 min",desc:"Llac turquesa amb el Vignemale al fons. Una de les postals més icòniques del Pirineu. Restauant al llac.",tip:"Telecabina des de Pont d'Espagne",lat:42.8314,lng:-0.1396},
+  {name:"Pont d'Espagne",zone:"Varetja",zc:"zg",cats:["senderisme","natura"],diff:"f",diffTxt:"Sense esforç · mirador + pont",time:"45 min cotxe",desc:"Pont medieval sobre el torrent de Gaube al peu de la zona protegida. Punt de partida per al Marcadau i el Lac de Gaube. Aparcament al costat.",tip:"Aparcament 8 €/dia",lat:42.8509,lng:-0.1402},
+  {name:"Refuge des Oulettes de Gaube",zone:"Varetja",zc:"zg",cats:["senderisme","vistes"],diff:"m",diffTxt:"Moderat · +1h30 des del Lac de Gaube",time:"45 min cotxe + 3h30 caminada",desc:"Als peus del Vignemale (3.298 m) amb glacera visible. Per als membres del grup amb ganes d'anar al límit. Vistes extraordinàries.",tip:"Es pot dormir al refugi",lat:42.7927,lng:-0.1411},
+  {name:"Hautacam (MTB/Bici) 🚵",zone:"Varetja",zc:"zg",cats:["aventura"],diff:"m",diffTxt:"Aventura · bici de muntanya",time:"20 min cotxe",desc:"Estació d'estiu amb pistes de descens en bici de muntanya (MTB). Pujada legendària del Tour de France. Lloguer de material disponible. Perfecte per als joves.",tip:"Comprova horaris i lloguer online",lat:43.0032,lng:-0.0289},
+  {name:"Vertige de l'Adour (Ferrata) 🧗",zone:"Varetja",zc:"zg",cats:["aventura"],diff:"m",diffTxt:"Aventura · via ferrata i tirolines",time:"30 min cotxe",desc:"Parc d'aventura a Bagnères-de-Bigorre amb via ferrata, tirolina i ponts tibetans sobre el riu. Molt popular entre joves. Cal reserva i material.",tip:"Reserva online anticipada",lat:43.0650,lng:0.1520},
+  {name:"Grottes de Bétharram",zone:"Varetja",zc:"zg",cats:["natura"],diff:"f",diffTxt:"Familiar · barca + tren subterrani",time:"45 min cotxe",desc:"Coves espectaculars amb visita guiada en barca i tren de muntanya subterrani. Una de les millors atraccions familiars de la zona. Cal reserva.",tip:"Reserva online imprescindible",lat:43.1020,lng:-0.1881},
+  {name:"Ibones de Ordicuso",zone:"Varetja",zc:"zg",cats:["senderisme","ibon","natura"],diff:"m",diffTxt:"Moderat · des d'Arrens-Marsous",time:"40 min cotxe + 3h",desc:"Sèrie de llacs d'alta muntanya a la Vallée d'Azun. Entorn alpí tranquil i poc massificat. Una de les joies ocultes de la zona.",tip:"Poc senyalitzat, millor amb mapa",lat:42.9050,lng:-0.2800},
+  {name:"Pont Napoléon · Luz",zone:"Varetja",zc:"zg",cats:["vistes","poble"],diff:"f",diffTxt:"Sense esforç · en cotxe",time:"20 min cotxe",desc:"Pont sobre un abisme de 65 m construït per ordre de Napoleó III. Molt fotogènic i curiós. A Luz-Saint-Sauveur.",tip:"Aparca al costat, visita en 15 min",lat:42.8779,lng:-0.0072},
+  {name:"Luz-Saint-Sauveur",zone:"Varetja",zc:"zg",cats:["poble"],diff:"f",diffTxt:"Sense esforç · poble",time:"20 min cotxe",desc:"Pont dels Templaris del s. XIV i Église des Templiers del s. XII. Mercat dimecres i dissabtes. Molt autèntic.",tip:"Mercat molt bo",lat:42.8707,lng:-0.0032},
+  {name:"Basílica de Lourdes",zone:"Varetja",zc:"zg",cats:["poble"],diff:"f",diffTxt:"Cultural · visita lliure",time:"35 min cotxe",desc:"La Basílica de Nostra Senyora del Rosari i la Cova de Massabielle, un dels llocs de pelegrinatge més importants del món. Arquitectura impressionant.",tip:"Combina amb el Funicular del Pic du Jer",lat:43.0945,lng:-0.0462},
+  {name:"Gorges de Héas",zone:"Varetja",zc:"zg",cats:["natura","senderisme"],diff:"f",diffTxt:"Fàcil · 1h passeig",time:"15 min cotxe",desc:"Gorja lateral poc visitada amb cascades petites i camí entre parets de roca. Molt tranquil·la. Ideal si fa vent o vol evitar l'afluència de Gavarnie.",tip:"Ideal com a complement tardà",lat:42.7735,lng:-0.0541},
+  {name:"Lac d'Estaing",zone:"Varetja",zc:"zg",cats:["natura","senderisme","ibon"],diff:"f",diffTxt:"Fàcil · 3 km circular · pla",time:"40 min cotxe + 45 min caminada",desc:"Llac de muntanya de color verd fosc envoltat de boscos. Vaques i ponis al voltant. Passejada circular plana de 3 km. Zona de pic-nic excel·lent.",tip:"Porta banyador: aigua freda però possible",lat:42.9068,lng:-0.2075},
+  {name:"Domaine des Landes (Tirolines) ⚡",zone:"Varetja",zc:"zg",cats:["aventura"],diff:"m",diffTxt:"Aventura · tirolines i escalada",time:"40 min cotxe",desc:"Parc d'aventura a la Vallée d'Azun. Tirolines, escalada i ponts tibetans. Molt popular entre els joves. Consulta horaris.",tip:"Reserva amb antelació",lat:42.9400,lng:-0.2100},
+  {name:"Ibón de Anayet",zone:"Varetja",zc:"zg",cats:["senderisme","ibon"],diff:"m",diffTxt:"Moderat · 2h · +500 m",time:"45 min cotxe + 2h caminada",desc:"Un dels ibons més estètics del Pirineu aragonès, amb la Peña Anayet al fons. Des del pàrquing de pagament d'Anayet (Formigal). Ruta senyalitzada.",tip:"Pàrquing de pagament al coll",lat:42.7650,lng:-0.3800},
+  {name:"Chemin de la Mâture",zone:"Gourette",zc:"zb",cats:["senderisme","vistes","aventura"],diff:"m",diffTxt:"Moderat · camí exposat espectacular",time:"1h cotxe + 1h30 caminada",desc:"Camí excavat a la roca al s. XVII per transportar pins als arsenals de la marina. Tallat a la paret vertical sobre el Riu d'Aspe. Molt exposat i impressionant.",tip:"Prop de Lescun/Le Somport",lat:42.9050,lng:-0.6300},
+  // ZONA GOURETTE
+  {name:"Col d'Aubisque",zone:"Gourette",zc:"zb",cats:["vistes"],diff:"f",diffTxt:"Sense esforç · en cotxe",time:"En ruta Varetja-Gourette",desc:"Port de 1.709 m en ruta entre Varetja i Gourette. Vistes sobre la Vallée d'Ossau i el Béarn. Vaques i isards al cim. Parada obligatòria.",tip:"En ruta, no cal desviament",lat:42.9778,lng:-0.3358},
+  {name:"Lac de Bious-Artigues",zone:"Gourette",zc:"zb",cats:["natura","ibon","vistes"],diff:"f",diffTxt:"Fàcil · 3 km circular · pla",time:"45 min cotxe + 45 min caminada",desc:"La postal més icònica del Pirineu francès. El llac reflecteix el Pic du Midi d'Ossau (2.884 m). Canoè de lloguer, restaurant amb crêpes.",tip:"Pàrquing s'omple: arriba d'hora",lat:42.8678,lng:-0.453},
+  {name:"Lacs d'Ayous",zone:"Gourette",zc:"zb",cats:["senderisme","ibon","vistes"],diff:"m",diffTxt:"Moderat · 10 km · +700 m · 4h",time:"45 min cotxe + 4h caminada",desc:"Des de Bious-Artigues, pujada a la cadena de llacs d'Ayous (2.288 m). El Pic du Midi d'Ossau al fons de cada llac. Una de les rutes més belles de la zona.",tip:"Un dels millors dies del Pirineu francès",lat:42.8550,lng:-0.4850},
+  {name:"Lac du Montagnon",zone:"Gourette",zc:"zb",cats:["senderisme","ibon"],diff:"m",diffTxt:"Moderat · 2h · +400 m des de Gourette",time:"Des de Gourette (sense cotxe)",desc:"Llac d'alta muntanya accessible directament des de Gourette. Vistes sobre la Vallée d'Ossau. Molt tranquil. També recorregut habitual de MTB.",tip:"Ideal si no es vol agafar el cotxe",lat:42.9400,lng:-0.3400},
+  {name:"Petit Train d'Artouste 🚂",zone:"Gourette",zc:"zb",cats:["natura","vistes"],diff:"f",diffTxt:"Fàcil · telecabina + tren",time:"20 min cotxe + 1h30 tren",desc:"El tren de muntanya més alt d'Europa (2.000 m). Telecabina + tren vintage obert per crestes amb vistes abismals. Marmotes garantides. Lac d'Artouste al final.",tip:"Reserva online amb dies d'antelació: s'omple",lat:42.8795,lng:-0.3964},
+  {name:"Lac d'Anglas",zone:"Gourette",zc:"zb",cats:["senderisme","ibon"],diff:"m",diffTxt:"Moderat · 3h · +730 m des de Gourette",time:"Des de Gourette + 3h pujada",desc:"Llac alpí a 2.068 m accessible des de Gourette. Primera secció pel bosc amb cascades, final obert amb vistes. Una de les millors rutes des de la base.",tip:"Molt bonica però exigent",lat:42.9312,lng:-0.3251},
+  {name:"Ibón de Estanés",zone:"Gourette",zc:"zb",cats:["senderisme","ibon","natura"],diff:"m",diffTxt:"Moderat · 2h · +450 m",time:"1h cotxe + 2h caminada",desc:"Llac solitari a la frontera pirinenca a la Vall d'Ansó. Un dels racons menys coneguts i més bonics del Pirineu aragonès. Silenci absolut.",tip:"Un dels ibons menys massificats",lat:42.8700,lng:-0.6900},
+  {name:"Le Somport + Lescun",zone:"Gourette",zc:"zb",cats:["poble","vistes"],diff:"f",diffTxt:"Cultural · en cotxe",time:"45 min cotxe",desc:"El port de Somport, pas històric del Camí de Sant Jaume. Baixant al costat espanyol: Lescun, el poble de pedra als peus dels Pics de Lescun.",tip:"Paisatge fantàstic a ambdós costats",lat:42.7983,lng:-0.5267},
+  {name:"La Verna Cave (Espeleologia) 🕳",zone:"Gourette",zc:"zb",cats:["aventura","natura"],diff:"m",diffTxt:"Moderat · visita guiada",time:"1h30 cotxe",desc:"Una de les cavernes naturals més grans d'Europa a Pierre-Saint-Martin. Sala gegant de 230 m d'alçada. Visites guiades. Una experiència completament diferent.",tip:"Reserva obligatòria · porta roba d'abric",lat:42.9900,lng:-0.7700},
+  {name:"Mesa de los Tres Reyes 🏔",zone:"Gourette",zc:"zb",cats:["senderisme","vistes"],diff:"e",diffTxt:"Exigent · 5–6h · +900 m",time:"1h cotxe + 5h caminada",desc:"El cim més alt de Navarra (2.428 m). Vistes excepcionals sobre els tres regnes medievals. Per a caminadors experimentats. Zona de l'Ansabère.",tip:"Inici molt d'hora, bon calçat",lat:42.8600,lng:-0.7500},
+  {name:"Laruns + Eaux-Bonnes",zone:"Gourette",zc:"zb",cats:["poble"],diff:"f",diffTxt:"Sense esforç · pobles",time:"10–15 min cotxe",desc:"Laruns: mercat dimarts i divendres, cases basques, formatge d'Ossau-Iraty AOC. Eaux-Bonnes: balneari elegant del s. XIX, arquitectura napoleònica única.",tip:"Circuit en menys d'1h de cotxe",lat:42.9898,lng:-0.4267},
+  {name:"Ibonet de Paderna",zone:"Gourette",zc:"zb",cats:["senderisme","ibon"],diff:"m",diffTxt:"Moderat · Vall d'Ossau aragonesa",time:"45 min cotxe + 2h caminada",desc:"Petit llac alpí a la Vall d'Ossau, costat espanyol. Ruta tranquil·la i poc freqüentada. Bona alternativa per als qui volen explorar la banda aragonesa.",tip:"Poc senyalitzat, porta mapa",lat:42.8200,lng:-0.5100},
+  {name:"Ordesa — Senda dels Caçadors",zone:"Gourette",zc:"zb",cats:["senderisme","vistes"],diff:"e",diffTxt:"Exigent · 21 km · +800 m · 6–7h",time:"1h cotxe + 6–7h caminada",desc:"La circular completa d'Ordesa: pujada per la Senda dels Caçadors (800 m desnivell), travessa del sobraplano i baixada per la ruta de la vall. La millor excursió de la zona.",tip:"Bus obligatori des de Torla · Primer bus a les 8h",lat:42.6491,lng:-0.0577},
+  {name:"Cascada del Estrecho · Ordesa",zone:"Gourette",zc:"zb",cats:["cascada","senderisme"],diff:"f",diffTxt:"Fàcil · 1h des de la Pradera",time:"1h cotxe + 1h caminada",desc:"Primera gran cascada de la ruta de la vall d'Ordesa. Molt fotogènica i accessible en menys d'1h des de la Pradera.",tip:"Punt de retorn perfecte per la versió curta",lat:42.6359,lng:-0.0279},
+  {name:"Cola de Caballo · Ordesa",zone:"Gourette",zc:"zb",cats:["cascada","senderisme","vistes"],diff:"f",diffTxt:"Fàcil · ruta de la vall · 3h anada/tornada",time:"1h cotxe + 3h caminada",desc:"Cascada de 70 m al peu del Monte Perdido. L'objectiu final de la ruta de la vall d'Ordesa. Sempre impressionant, amb boira d'aigua quan fa calor.",tip:"Versió fàcil de l'excursió d'Ordesa",lat:42.6417,lng:0.0099},
+  {name:"Cascada de Sorrosal",zone:"Gourette",zc:"zb",cats:["cascada"],diff:"f",diffTxt:"Fàcil · 30 min · des de Broto",time:"20 min cotxe + 30 min caminada",desc:"Cascada de 100 m al costat de Broto. Molt espectacular al juliol quan porta plena d'aigua. Combina bé amb la visita a Torla i Broto.",tip:"Imprescindible si passes per Broto",lat:42.6100,lng:-0.1350},
+  {name:"Torla-Ordesa",zone:"Gourette",zc:"zb",cats:["poble"],diff:"f",diffTxt:"Sense esforç · poble",time:"1h cotxe",desc:"El poble de pedra als peus del Parc Nacional. Arquitectura pirinenca perfectament conservada. Punt de sortida del bus cap a Ordesa. Molt fotogènic.",tip:"Parada obligatòria del dia d'Ordesa",lat:42.6287,lng:-0.1127},
+  {name:"Pont de Bujaruelo",zone:"Gourette",zc:"zb",cats:["senderisme","vistes"],diff:"f",diffTxt:"Fàcil · 15 min cotxe de Torla",time:"1h15 cotxe",desc:"Pont romànic medieval sobre el riu Ara en entorn salvatge. Carretera estreta però molt fotogènica. Perfecte per combinar amb la sortida del bus d'Ordesa.",tip:"Molt tranquil, quasi sense turistes",lat:42.6950,lng:-0.1062},
+  // ZONA BOLTAÑA
+  {name:"Sallent de Gállego",zone:"Boltaña",zc:"za",cats:["poble"],diff:"f",diffTxt:"Sense esforç · poble",time:"En ruta Gourette-Boltaña",desc:"Un dels pobles de pedra millor conservats dels Pirineus aragonesos. Mercat artesà a l'estiu. Molt fotogènic.",tip:"En ruta del trasllat",lat:42.7717,lng:-0.332},
+  {name:"Lanuza (llac)",zone:"Boltaña",zc:"za",cats:["natura","vistes"],diff:"f",diffTxt:"Fàcil · 5 km circular · pla",time:"En ruta Gourette-Boltaña",desc:"Embassament amb el poble submergit de Lanuza. Les cases emergeixen quan baixa el nivell d'estiu. Imatge surrealista. Passejada circular plana de 5 km.",tip:"Aparca a Sallent i camina 15 min",lat:42.7503,lng:-0.3149},
+  {name:"La Gorga de Boltaña (Pozas) 🏊",zone:"Boltaña",zc:"za",cats:["natura"],diff:"f",diffTxt:"Sense esforç · bany natural",time:"A Boltaña",desc:"Piscines naturals al riu Ara just al costat del poble. Gratuïtes i molt fresques. Perfectes per a la tarda d'arribada o qualsevol tarda calorosa.",tip:"Gratuïtes, molt populars localment",lat:42.4730,lng:0.0700},
+  {name:"Balneari de Panticosa",zone:"Boltaña",zc:"za",cats:["natura","senderisme"],diff:"f",diffTxt:"Fàcil · 40 min circular al circ",time:"30 min cotxe",desc:"Circ glacial amb hotels Belle Époque dels anys 20. L'Ibón de los Baños (turquesa, 10 min) és immediatament accessible. Dinar a la terrassa amb vistes als 3.000 m.",tip:"Un dels racons més bonics i menys turístics",lat:42.7592,lng:-0.236},
+  {name:"Cascada de Los Azules",zone:"Boltaña",zc:"za",cats:["cascada","senderisme"],diff:"m",diffTxt:"Moderat · des del Balneari · +600 m · 2h30",time:"30 min cotxe + 2h30 caminada",desc:"Una de les cascades menys visitades i més espectaculars de la Vall de Tena. Al final d'una cadena d'ibons (Bachimaña). Molt poc freqüentada.",tip:"Ruta que combina ibons i cascada",lat:42.7900,lng:-0.2500},
+  {name:"Ibón Azul Superior",zone:"Boltaña",zc:"za",cats:["senderisme","ibon"],diff:"m",diffTxt:"Moderat · des del Balneari · +500 m · 2h",time:"30 min cotxe + 2h caminada",desc:"Llac alpí a 2.400 m al final de la cadena dels Bachimaña. Paisatge de granit, silenci absolut i vistes al Vignemale. Per als membres més actius.",tip:"Combina amb la Cascada de Los Azules",lat:42.7850,lng:-0.2550},
+  {name:"Ibón de Acherito",zone:"Boltaña",zc:"za",cats:["senderisme","ibon","natura"],diff:"m",diffTxt:"Moderat · 2h · +500 m · Ansó",time:"1h30 cotxe + 2h caminada",desc:"Un dels ibons amb valoració 5★ dels Pirineus. Des de la Selva de Oza (Ansó). Marmotes i isards garantits. Dolmen d'Acherito en la tornada circular.",tip:"Considereu el circuit de tornada",lat:42.8799,lng:-0.7071},
+  {name:"Ibón de Estanés",zone:"Boltaña",zc:"za",cats:["senderisme","ibon"],diff:"m",diffTxt:"Moderat · 2h · +450 m",time:"1h30 cotxe + 2h caminada",desc:"Llac solitari a la frontera de la Vall d'Ansó. Molt tranquil, quasi sense visitants. Combinable amb Hecho i Ansó.",tip:"Un dels ibons menys massificats del Pirineu",lat:42.8700,lng:-0.6900},
+  {name:"Valle de Pineta",zone:"Boltaña",zc:"za",cats:["senderisme","vistes","natura"],diff:"f",diffTxt:"Fàcil (fons de vall) · +150 m · 4 km",time:"1h cotxe",desc:"La capçalera tancada més impressionant del Pirineu. Parets verticals de 1.500 m sobre praderia plana verda. Monte Perdido al fons. Óssos bruns i isards.",tip:"Bus opcional des de Bielsa a l'estiu",lat:42.6897,lng:0.0635},
+  {name:"Balcó de Pineta 🏔",zone:"Boltaña",zc:"za",cats:["senderisme","vistes"],diff:"e",diffTxt:"Exigent · +800 m · 5–6h",time:"1h cotxe + 5h caminada",desc:"Cornisa sobre la Valle de Pineta que ofereix les vistes més espectaculars del viatge. Monte Perdido, el circ sencer i l'Aragó fins a França. Per a caminadors preparats.",tip:"Molt exposat al sol: surt d'hora i porta molta aigua",lat:42.6890,lng:0.0487},
+  {name:"Cascada de La Larri",zone:"Boltaña",zc:"za",cats:["cascada","senderisme"],diff:"f",diffTxt:"Fàcil · 20 min des de la carretera",time:"1h cotxe + 20 min caminada",desc:"Cascada de 100 m molt accessible des de la carretera de Pineta. Des d'allí s'arriba als Llanos de La Larri (praderies alpines a 1.900 m). Molt accessible.",tip:"Imprescindible del dia de Pineta",lat:42.6987,lng:0.0919},
+  {name:"Llanos de La Larri",zone:"Boltaña",zc:"za",cats:["senderisme","natura","vistes"],diff:"f",diffTxt:"Fàcil · +200 m des de la cascada",time:"1h cotxe + 1h caminada",desc:"Praderies alpines a 1.900 m amb vistes al Cilindre de Marboré. Florissants a juliol. Es poden veure isards i trencalosses.",tip:"Val molt la pena pujar fins aquí des de La Larri",lat:42.7050,lng:0.1000},
+  {name:"Cascada del Cinca",zone:"Boltaña",zc:"za",cats:["cascada"],diff:"f",diffTxt:"Fàcil · 40 min des del pàrquing",time:"1h cotxe + 40 min caminada",desc:"El riu Cinca neix a la capçalera de Pineta en una cascada espectacular. Poc senyalitzada però accessible seguint el curs del riu. Molt poc visitada.",tip:"Segueix el curs del riu des del pàrquing",lat:42.7050,lng:0.1150},
+  {name:"Túnel de Bielsa–Aragnouet",zone:"Boltaña",zc:"za",cats:["vistes","natura"],diff:"f",diffTxt:"En cotxe · circuit fronterer",time:"1h cotxe",desc:"El túnel fronterer permet fer un circuit: entrada per Bielsa (Espanya), sortida per Aragnouet (França) on hi ha una cascada impressionant a 1.800 m.",tip:"Tràfic alternat, espera possible",lat:42.7482,lng:0.1912},
+  {name:"Ermites de Tella",zone:"Boltaña",zc:"za",cats:["poble","vistes"],diff:"f",diffTxt:"Cultural · caminada curta 30 min",time:"45 min cotxe + 30 min caminada",desc:"Conjunt d'ermites romàniques medievals sobre un promontori rocós. En el Geoparc Sobrarbe. Vistes al Cañón de Añisclo. Úniques al Pirineu.",tip:"No te'l perdis si t'agrada el romànic",lat:42.5550,lng:0.1300},
+  {name:"Aínsa (medieval)",zone:"Boltaña",zc:"za",cats:["poble"],diff:"f",diffTxt:"Sense esforç · 15 min de Boltaña",time:"15 min cotxe",desc:"Un dels pobles medievals millor conservats d'Espanya. Plaça Major porticada del s. XII, castell amb vistes. Geoparc Sobrarbe al castell (gratuït). Mercat dissabtes.",tip:"Mercat medieval dissabtes a l'estiu",lat:42.4171,lng:0.1389},
+  {name:"Mirador Cañón de Añisclo",zone:"Boltaña",zc:"za",cats:["vistes"],diff:"f",diffTxt:"En cotxe · sense esforç",time:"30 min cotxe",desc:"Mirador sobre la gorja d'Añisclo accessible en cotxe. Vistes del cañon calcari des de dalt, molt diferent de la perspectiva des del fons.",tip:"Molts pocs turistes aquí dalt",lat:42.5700,lng:0.0600},
+  {name:"Cañón de Añisclo",zone:"Boltaña",zc:"za",cats:["senderisme","natura"],diff:"f",diffTxt:"Fàcil · 3 km · ruta del fons",time:"30 min cotxe + 1h30 caminada",desc:"Gorja estreta i ombrívola amb el riu Vellos al fons. Menys turística que Ordesa i igual d'espectacular. Ruta plana des del pàrquing de la Ripera.",tip:"Millor de bon matí per la frescor",lat:42.572,lng:0.054},
+  {name:"Alquézar",zone:"Boltaña",zc:"za",cats:["poble","natura"],diff:"f",diffTxt:"Sense esforç · poble + gorges",time:"1h cotxe",desc:"Un dels pobles medievals més bonics d'Aragó. Col·legiata i castell sobre el barranc. Gorges del Vero amb barranquisme i caiac. Pont de pedra medieval.",tip:"Molt bonic però 1h cotxe de Boltaña",lat:42.3400,lng:0.1300},
+  {name:"La Pardina del Señor",zone:"Boltaña",zc:"za",cats:["poble"],diff:"f",diffTxt:"Cultural · granja medieval",time:"20 min cotxe",desc:"Manor medieval restaurada prop d'Aínsa. Museu etnogràfic de la vida rural pirinenca. Molt didàctic. Productes artesans en venda.",tip:"Curiós i poc conegut",lat:42.4300,lng:0.1100},
+  {name:"Ermita de San Martín de la Val d'Onsera",zone:"Boltaña",zc:"za",cats:["poble","natura"],diff:"f",diffTxt:"Moderat · 30 min caminada",time:"1h15 cotxe + 30 min caminada",desc:"Ermita del s. XI encastada a la roca sobre el barranc de la Val d'Onsera. Una de les joies romàniques menys conegudes d'Aragó. Entorn espectacular.",tip:"Cal tenir cura: camí exposat",lat:42.1500,lng:-0.2900},
+  {name:"Poza del Molino (Bany natural) 🏊",zone:"Boltaña",zc:"za",cats:["natura"],diff:"f",diffTxt:"Sense esforç · bany natural",time:"30 min cotxe",desc:"Piscina natural al riu Ara prop de Broto. Molt popular entre els locals. Gratuïta i accessible. Perfecta per a la tarda de tornada del Balneari.",tip:"Gratuïta · Broto center",lat:42.6100,lng:-0.1200},
+  {name:"Plan (poble de Gistaín)",zone:"Boltaña",zc:"za",cats:["poble"],diff:"f",diffTxt:"Cultural · poble autèntic",time:"1h cotxe",desc:"Petit poble de pedra de la Vall de Gistaín. Arquitectura pirinenca molt autèntica. Famós pel seu carnaval. Molt tranquil i sense turisme massiu.",tip:"Combina bé amb l'Ibón de Plan",lat:42.5897,lng:0.3656},
+  {name:"Ibón de Plan",zone:"Boltaña",zc:"za",cats:["senderisme","ibon","natura"],diff:"m",diffTxt:"Moderat · Vall de Gistaín",time:"1h cotxe + 2h caminada",desc:"Llac de muntanya a la Vall de Gistaín. Entorn molt tranquil i poc visitat. Bona opció per als que volen explorar la part menys coneguda del Pirineu.",tip:"Combina bé amb el poble de Plan",lat:42.6100,lng:0.3800},
+  {name:"Broto + Pont medieval",zone:"Boltaña",zc:"za",cats:["poble"],diff:"f",diffTxt:"Sense esforç · poble",time:"30 min cotxe",desc:"Pont gòtic del s. XV sobre el riu Ara. Nucli antic de cases de pedra. Mercat local divendres. Punt d'accés a Torla i la Cascada de Sorrosal.",tip:"Molt a prop de Torla",lat:42.6048,lng:-0.1233},
+  {name:"Circo de Igüer",zone:"Boltaña",zc:"za",cats:["senderisme","vistes","natura"],diff:"m",diffTxt:"Moderat · circ glacial poc freqüentat",time:"1h30 cotxe + 3h caminada",desc:"Circ glacial molt poc freqüentat a la frontera pirinenca, proper a la zona d'Ansó. Un dels racons menys visitats i més salvatges de la zona.",tip:"Necessita mapa i bona orientació",lat:42.8100,lng:-0.7200},
+];
+
+// ── RENDER PLACES ─────────────────────────────────
+const grid = document.getElementById('places-grid');
+const info = document.getElementById('results-info');
+const ICON_MAP = {svg:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>'};
+const TAG_LABELS = {senderisme:'🥾 Senderisme',cascada:'💧 Cascada',ibon:'🏔 Ibón',poble:'🏘 Poble',aventura:'⚡ Aventura',vistes:'🔭 Vistes',natura:'🌿 Natura/Bany'};
+const DIFF_CLASS = {f:'pf',m:'pm',e:'pe'};
+const DIFF_COLOR = {f:'var(--g)',m:'#7a5a00',e:'var(--red)'};
+
+function buildTagHtml(cats){
+  return cats.map(c=>`<span class="tag" style="background:${catBg(c)};color:${catColor(c)}">${TAG_LABELS[c]||c}</span>`).join('');
+}
+function catBg(c){return{senderisme:'var(--gl)',cascada:'var(--tealbg)',ibon:'var(--bl)',poble:'#f0e8ff',aventura:'var(--oranbg)',vistes:'var(--purbg)',natura:'var(--al)'}[c]||'#eee'}
+function catColor(c){return{senderisme:'var(--g)',cascada:'var(--teal)',ibon:'var(--b)',poble:'#6b4f00',aventura:'var(--oran)',vistes:'var(--pur)',natura:'var(--am)'}[c]||'#333'}
+
+PLACES.forEach((p,i)=>{
+  const card = document.createElement('div');
+  card.className='place-card';
+  card.dataset.cats=p.cats.join(',');
+  card.innerHTML=`
+    <div class="pc-zone ${p.zc}">${p.zone}</div>
+    <div class="pc-name">${p.name}</div>
+    <div class="pc-diff ${DIFF_CLASS[p.diff]}">${p.diffTxt}</div>
+    <div class="pc-tags">${buildTagHtml(p.cats)}</div>
+    <div class="pc-desc">${p.desc}</div>
+    <div class="pc-info"><span>⏱ ${p.time}</span>${p.tip?`<span>💡 ${p.tip}</span>`:''}</div>
+    <button class="mbtn" style="color:${p.zc==='zg'?'var(--gm)':p.zc==='zb'?'var(--b)':'var(--am)'};border-color:currentColor" onclick="openMaps(${p.lat},${p.lng})">
+      ${ICON_MAP.svg} Google Maps
+    </button>`;
+  grid.appendChild(card);
+});
+updateCount();
+
+function filterPlaces(cat, btn){
+  document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.place-card').forEach(c=>{
+    const cats=c.dataset.cats.split(',');
+    if(cat==='all'||cats.includes(cat)) delete c.dataset.hidden;
+    else c.dataset.hidden='1';
+  });
+  updateCount(cat);
+}
+function updateCount(cat){
+  const visible=document.querySelectorAll('.place-card:not([data-hidden])').length;
+  info.textContent=cat&&cat!=='all'?`${visible} llocs amb filtre "${TAG_LABELS[cat]||cat}"`:`${visible} llocs en total`;
+}
+
+// ── NAV ───────────────────────────────────────────
+function showMain(id,btn){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('visible'));
+  document.getElementById('explorer').classList.remove('visible');
+  document.querySelectorAll('.tab-btn').forEach(b=>b.className='tab-btn');
+  if(id==='explorer'){
+    document.getElementById('explorer').classList.add('visible');
+    btn.classList.add('amap');
+  } else {
     document.getElementById(id).classList.add('visible');
-    const colors = { s1:'active-green', s2:'active-blue', s3:'active-amber' };
-    btn.classList.add(colors[id]);
+    const cls={s1:'ag',s2:'ab',s3:'aa'};
+    btn.classList.add(cls[id]);
   }
-  function toggleDay(card) { card.classList.toggle('open'); }
-  function toggleExtra(card) { card.classList.toggle('open'); }
-  function openMaps(name, lat, lng) {
-    window.open('https://www.google.com/maps/search/?api=1&query=' + lat + ',' + lng, '_blank');
-  }
+}
+function toggleDay(card){card.classList.toggle('open')}
+function toggleExtra(card){card.classList.toggle('open')}
+function openMaps(lat,lng){window.open('https://www.google.com/maps/search/?api=1&query='+lat+','+lng,'_blank')}
 </script>
 </body>
 </html>
